@@ -8518,17 +8518,17 @@ namespace HelaMedical
                 //сформировать отчет по алкогольной зависимости
                 if (_typeOfAddiction == "Алкогольная")
                 {
-                    ExcelDataServis.Save_Report_Excel_Alco(alco);
+                    ExcelServis.Save_Report_Excel_Alco(alco);
                 }
                 //сформировать отчет по наркозависимости
                 else if (_typeOfAddiction == "Наркотическая")
                 {
-                    ExcelDataServis.Save_Report_Excel_Narco(narco);
+                    ExcelServis.Save_Report_Excel_Narco(narco);
                 }
                 //сформировать отчет по полизависимости
                 else if (_typeOfAddiction == "Полизависимость")
                 {
-                    ExcelDataServis.Save_Report_Excel_Poliz(poliz);
+                    ExcelServis.Save_Report_Excel_Poliz(poliz);
                 }
 
                 Close();

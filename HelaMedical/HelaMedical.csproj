@@ -363,11 +363,8 @@
     <Compile Include="Class\Person.cs" />
     <Compile Include="DbContexte\DBConection.cs" />
     <Compile Include="DbContexte\Entity.cs" />
+    <Compile Include="ExcelServis.cs" />
     <Compile Include="ReadPerson.cs" />
-    <Page Include="CreatPersonal.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Diagramm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -407,9 +404,6 @@
     <Compile Include="Class\Narcoman.cs" />
     <Compile Include="Class\Other.cs" />
     <Compile Include="Class\Polizavis.cs" />
-    <Compile Include="CreatPersonal.xaml.cs">
-      <DependentUpon>CreatPersonal.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Diagramm.xaml.cs">
       <DependentUpon>Diagramm.xaml</DependentUpon>
     </Compile>

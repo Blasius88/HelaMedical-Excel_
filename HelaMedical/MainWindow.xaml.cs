@@ -15,8 +15,6 @@ namespace HelaMedical
     /// </summary>
     public partial class MainWindow : Window
     {
-        ApplicationContext db;
-
         public MainWindow()
         {
             try

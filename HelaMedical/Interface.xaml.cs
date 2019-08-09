@@ -98,17 +98,6 @@ namespace HelaMedical
         }
 
         /// <summary>
-        /// редактировать / удалить персонал 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
-        {
-            CreatPersonal creatPersonal = new CreatPersonal();
-            creatPersonal.Show();
-        }
-
-        /// <summary>
         /// Выбрать Область и регион
         /// </summary>
         private void MenuItem_OblReg_Click(object sender, RoutedEventArgs e)
