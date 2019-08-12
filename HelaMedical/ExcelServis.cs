@@ -21,6 +21,92 @@ namespace HelaMedical
         public static int poliz_col = 0;
 
         /// <summary>
+        /// Считываем данные с Excel фаила 
+        /// </summary>
+        public static void Read_Alco()
+        {
+            try
+            {
+                Alco.AlcoholismPersona.Clear();
+                string ExcelFilePath = @"d:\HelaMedical\HelaMedical\File\AlcoDataBase.xlsx";
+                Excel.Application excelApp = new Excel.Application();
+                Workbook workBook;
+                Worksheet workSheet;
+                Range range;
+                workBook = excelApp.Workbooks.Open(ExcelFilePath);
+                workSheet = (Worksheet)workBook.Worksheets.get_Item(1);
+                range = workSheet.UsedRange;
+                for (int cCnt = 0; cCnt <= range.Rows.Count; cCnt++)
+                {
+                    Alco alcos = new Alco
+                    {
+                        Id = Convert.ToString(workSheet.Cells[cCnt, 1].Value),
+                        FIO = Convert.ToString(workSheet.Cells[cCnt, 2].Value),
+                        Sex = Convert.ToString(workSheet.Cells[cCnt, 3].Value),
+                        Date = Convert.ToString(workSheet.Cells[cCnt, 4].Value),
+                        RegionCenterBLR = Convert.ToString(workSheet.Cells[cCnt, 5].Value),
+                        RaenCenterBLR = Convert.ToString(workSheet.Cells[cCnt, 6].Value),
+                        Life = Convert.ToString(workSheet.Cells[cCnt, 7].Value),
+                        Age = Convert.ToString(workSheet.Cells[cCnt, 8].Value),
+                        FamilyStatus = Convert.ToString(workSheet.Cells[cCnt, 9].Value),
+                        CostOfKids = Convert.ToString(workSheet.Cells[cCnt, 10].Value),
+                        FamilyComposition = Convert.ToString(workSheet.Cells[cCnt, 11].Value),
+                        Education = Convert.ToString(workSheet.Cells[cCnt, 12].Value),
+                        Profession = Convert.ToString(workSheet.Cells[cCnt, 13].Value),
+                        TheSkillLevelOfTheProfession = Convert.ToString(workSheet.Cells[cCnt, 14].Value),
+                        AddressOfRegistration = Convert.ToString(workSheet.Cells[cCnt, 15].Value),
+                        AddressAtTheTimeOfDeath = Convert.ToString(workSheet.Cells[cCnt, 16].Value),
+                        DataOfRegistration = Convert.ToString(workSheet.Cells[cCnt, 17].Value),
+                        ReRegistrationData = Convert.ToString(workSheet.Cells[cCnt, 18].Value),
+                        TypeOfRegistration = Convert.ToString(workSheet.Cells[cCnt, 19].Value),
+                        Heredity = Convert.ToString(workSheet.Cells[cCnt, 20].Value),
+                        DisabilityGroup = Convert.ToString(workSheet.Cells[cCnt, 21].Value),
+                        DisabilityStatus = Convert.ToString(workSheet.Cells[cCnt, 22].Value),
+                        ReasonForDisability = Convert.ToString(workSheet.Cells[cCnt, 23].Value),
+                        WorksStatus = Convert.ToString(workSheet.Cells[cCnt, 24].Value),
+                        AdmOtv = Convert.ToString(workSheet.Cells[cCnt, 25].Value),
+                        UgOtv = Convert.ToString(workSheet.Cells[cCnt, 26].Value),
+                        DlitsMLS = Convert.ToString(workSheet.Cells[cCnt, 27].Value),
+                        Stat107 = Convert.ToString(workSheet.Cells[cCnt, 28].Value),
+                        StatUKRB = Convert.ToString(workSheet.Cells[cCnt, 29].Value),
+                        RodPrav = Convert.ToString(workSheet.Cells[cCnt, 30].Value),
+                        NomLTP = Convert.ToString(workSheet.Cells[cCnt, 31].Value),
+                        LTPKol = Convert.ToString(workSheet.Cells[cCnt, 32].Value),
+                        Hospitel = Convert.ToString(workSheet.Cells[cCnt, 33].Value),
+                        EK = Convert.ToString(workSheet.Cells[cCnt, 34].Value),
+                        DateOfDeregistration = Convert.ToString(workSheet.Cells[cCnt, 35].Value),
+                        DateOfDead = Convert.ToString(workSheet.Cells[cCnt, 36].Value),
+                        PlaceOfDead = Convert.ToString(workSheet.Cells[cCnt, 37].Value),
+                        DeathCertificate = Convert.ToString(workSheet.Cells[cCnt, 38].Value),
+                        CauseOfDead = Convert.ToString(workSheet.Cells[cCnt, 39].Value),
+                        DeathCategory = Convert.ToString(workSheet.Cells[cCnt, 40].Value),
+                        OpeningPlace = Convert.ToString(workSheet.Cells[cCnt, 41].Value),
+                        HistoryOfParasucicides = Convert.ToString(workSheet.Cells[cCnt, 42].Value),
+                        FeaturesOfObservation = Convert.ToString(workSheet.Cells[cCnt, 43].Value),
+                        ExperienceAbuse = Convert.ToString(workSheet.Cells[cCnt, 44].Value),
+                        AlcoholicDrinks = Convert.ToString(workSheet.Cells[cCnt, 45].Value),
+                        IK = Convert.ToString(workSheet.Cells[cCnt, 46].Value),
+                        DrugDiagnosisAlc = Convert.ToString(workSheet.Cells[cCnt, 47].Value),
+                        AgeOfRegistration = Convert.ToString(workSheet.Cells[cCnt, 48].Value),
+                        AgeOfDead = Convert.ToString(workSheet.Cells[cCnt, 49].Value),
+                        DataInfo = Convert.ToString(workSheet.Cells[cCnt, 50].Value),
+                        Registrotor = Convert.ToString(workSheet.Cells[cCnt, 51].Value)
+                    };
+
+                    AlcoholismPersona.Add(alcos);
+                }
+                workBook.Close();
+                excelApp.Quit();
+            }
+            catch (Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                ExcepLog.Excep(excep);
+            }
+        }
+
+
+        /// <summary>
         /// Сохранение информации по выборке из отчета по алкогольной зависимости
         /// </summary>
         public static void Save_Report_Excel_Alco(List<Alco> alco)
@@ -111,6 +197,85 @@ namespace HelaMedical
             }
         }
 
+        public static void Read_Narco()
+        {
+            Narcoman.Drug_Addiction.Clear();
+            narco_col = 0;
+            string ExcelFilePath = @"d:\HelaMedical\HelaMedical\File\NarcoDataBase.xlsx";
+            Excel.Application excelApp = new Excel.Application();
+            Workbook workBook;
+            Worksheet workSheet;
+            Range range;
+            workBook = excelApp.Workbooks.Open(ExcelFilePath);
+            workSheet = (Worksheet)workBook.Worksheets.get_Item(1);
+            range = workSheet.UsedRange;
+            for (int cCnt = 0; cCnt <= range.Rows.Count; cCnt++)
+            {
+                Narcoman narcoman = new Narcoman
+                {
+                    Id = Convert.ToString(workSheet.Cells[cCnt, 1].Value),
+                    FIO = Convert.ToString(workSheet.Cells[cCnt, 2].Value),
+                    Sex = Convert.ToString(workSheet.Cells[cCnt, 3].Value),
+                    Date = Convert.ToString(workSheet.Cells[cCnt, 4].Value),
+                    RegionCenterBLR = Convert.ToString(workSheet.Cells[cCnt, 5].Value),
+                    RaenCenterBLR = Convert.ToString(workSheet.Cells[cCnt, 6].Value),
+                    Life = Convert.ToString(workSheet.Cells[cCnt, 7].Value),
+                    Age = Convert.ToString(workSheet.Cells[cCnt, 8].Value),
+                    FamilyStatus = Convert.ToString(workSheet.Cells[cCnt, 9].Value),
+                    CostOfKids = Convert.ToString(workSheet.Cells[cCnt, 10].Value),
+                    FamilyComposition = Convert.ToString(workSheet.Cells[cCnt, 11].Value),
+                    Education = Convert.ToString(workSheet.Cells[cCnt, 12].Value),
+                    Profession = Convert.ToString(workSheet.Cells[cCnt, 13].Value),
+                    TheSkillLevelOfTheProfession = Convert.ToString(workSheet.Cells[cCnt, 14].Value),
+                    AddressOfRegistration = Convert.ToString(workSheet.Cells[cCnt, 15].Value),
+                    AddressAtTheTimeOfDeath = Convert.ToString(workSheet.Cells[cCnt, 16].Value),
+                    DataOfRegistration = Convert.ToString(workSheet.Cells[cCnt, 17].Value),
+                    ReRegistrationData = Convert.ToString(workSheet.Cells[cCnt, 18].Value),
+                    TypeOfRegistration = Convert.ToString(workSheet.Cells[cCnt, 19].Value),
+                    Heredity = Convert.ToString(workSheet.Cells[cCnt, 20].Value),
+                    DisabilityGroup = Convert.ToString(workSheet.Cells[cCnt, 21].Value),
+                    DisabilityStatus = Convert.ToString(workSheet.Cells[cCnt, 22].Value),
+                    ReasonForDisability = Convert.ToString(workSheet.Cells[cCnt, 23].Value),
+                    WorksStatus = Convert.ToString(workSheet.Cells[cCnt, 24].Value),
+                    AdmOtv = Convert.ToString(workSheet.Cells[cCnt, 25].Value),
+                    UgOtv = Convert.ToString(workSheet.Cells[cCnt, 26].Value),
+                    DlitsMLS = Convert.ToString(workSheet.Cells[cCnt, 27].Value),
+                    Stat107 = Convert.ToString(workSheet.Cells[cCnt, 28].Value),
+                    StatUKRB = Convert.ToString(workSheet.Cells[cCnt, 29].Value),
+                    RodPrav = Convert.ToString(workSheet.Cells[cCnt, 30].Value),
+                    NomLTP = Convert.ToString(workSheet.Cells[cCnt, 31].Value),
+                    LTPKol = Convert.ToString(workSheet.Cells[cCnt, 32].Value),
+                    Hospitel = Convert.ToString(workSheet.Cells[cCnt, 33].Value),
+                    EK = Convert.ToString(workSheet.Cells[cCnt, 34].Value),
+                    DateOfDeregistration = Convert.ToString(workSheet.Cells[cCnt, 35].Value),
+                    DateOfDead = Convert.ToString(workSheet.Cells[cCnt, 36].Value),
+                    PlaceOfDead = Convert.ToString(workSheet.Cells[cCnt, 37].Value),
+                    DeathCertificate = Convert.ToString(workSheet.Cells[cCnt, 38].Value),
+                    CauseOfDead = Convert.ToString(workSheet.Cells[cCnt, 39].Value),
+                    DeathCategory = Convert.ToString(workSheet.Cells[cCnt, 40].Value),
+                    OpeningPlace = Convert.ToString(workSheet.Cells[cCnt, 41].Value),
+                    HistoryOfParasucicides = Convert.ToString(workSheet.Cells[cCnt, 42].Value),
+                    FeaturesOfObservation = Convert.ToString(workSheet.Cells[cCnt, 43].Value),
+                    IntranozologicalComorbidity = Convert.ToString(workSheet.Cells[cCnt, 44].Value),
+                    TypeOfDrug = Convert.ToString(workSheet.Cells[cCnt, 45].Value),
+                    DrugUse = Convert.ToString(workSheet.Cells[cCnt, 46].Value),
+                    YearOfFirstUse = Convert.ToString(workSheet.Cells[cCnt, 47].Value),
+                    ExperienceAbuseDrug = Convert.ToString(workSheet.Cells[cCnt, 48].Value),
+                    Remissions = Convert.ToString(workSheet.Cells[cCnt, 49].Value),
+                    RemissionNumber = Convert.ToString(workSheet.Cells[cCnt, 50].Value),
+                    RemissionTimer = Convert.ToString(workSheet.Cells[cCnt, 51].Value),
+                    DrugDiagnosisX = Convert.ToString(workSheet.Cells[cCnt, 52].Value),
+                    AgeOfRegistration = Convert.ToString(workSheet.Cells[cCnt, 53].Value),
+                    AgeOfDead = Convert.ToString(workSheet.Cells[cCnt, 54].Value),
+                    DataInfo = Convert.ToString(workSheet.Cells[cCnt, 55].Value),
+                    Registrotor = Convert.ToString(workSheet.Cells[cCnt, 56].Value)
+                };
+
+                Drug_Addiction.Add(narcoman);
+            }
+            workBook.Close();
+            excelApp.Quit();
+        }
         /// <summary>
         /// Сохранение информации по выборке из отчета по наркотической зависимости
         /// </summary>
@@ -196,6 +361,92 @@ namespace HelaMedical
             {
                 MessageBox.Show("Нет информации для создания отчета!!! Сформируйте отчет для записи информации в файл");
             }
+        }
+
+        /// <summary>
+        /// Считывать фаил 
+        /// </summary>
+        public static void Read_Poliz()
+        {
+            Polizavis.Alco_Narco_Person.Clear();
+            poliz_col = 0;
+            string ExcelFilePath = @"d:\HelaMedical\HelaMedical\File\PolizavisDataBase.xlsx";
+            Excel.Application excelApp = new Excel.Application();
+            Workbook workBook;
+            Worksheet workSheet;
+            Range range;
+            workBook = excelApp.Workbooks.Open(ExcelFilePath);
+            workSheet = (Worksheet)workBook.Worksheets.get_Item(1);
+            range = workSheet.UsedRange;
+            for (int cCnt = 0; cCnt <= range.Rows.Count; cCnt++)
+            {
+                Polizavis polizavis = new Polizavis
+                {
+                    Id = Convert.ToString(workSheet.Cells[cCnt, 1].Value),
+                    FIO = Convert.ToString(workSheet.Cells[cCnt, 2].Value),
+                    Sex = Convert.ToString(workSheet.Cells[cCnt, 3].Value),
+                    Date = Convert.ToString(workSheet.Cells[cCnt, 4].Value),
+                    RegionCenterBLR = Convert.ToString(workSheet.Cells[cCnt, 5].Value),
+                    RaenCentrBLR = Convert.ToString(workSheet.Cells[cCnt, 6].Value),
+                    Life = Convert.ToString(workSheet.Cells[cCnt, 7].Value),
+                    Age = Convert.ToString(workSheet.Cells[cCnt, 8].Value),
+                    FamilyStatus = Convert.ToString(workSheet.Cells[cCnt, 9].Value),
+                    CostOfKids = Convert.ToString(workSheet.Cells[cCnt, 10].Value),
+                    FamilyComposition = Convert.ToString(workSheet.Cells[cCnt, 11].Value),
+                    Education = Convert.ToString(workSheet.Cells[cCnt, 12].Value),
+                    Profession = Convert.ToString(workSheet.Cells[cCnt, 13].Value),
+                    TheSkillLevelOfTheProfession = Convert.ToString(workSheet.Cells[cCnt, 14].Value),
+                    AddressOfRegistration = Convert.ToString(workSheet.Cells[cCnt, 15].Value),
+                    AddressAtTheTimeOfDeath = Convert.ToString(workSheet.Cells[cCnt, 16].Value),
+                    DataOfRegistration = Convert.ToString(workSheet.Cells[cCnt, 17].Value),
+                    ReRegistrationData = Convert.ToString(workSheet.Cells[cCnt, 18].Value),
+                    TypeOfRegistration = Convert.ToString(workSheet.Cells[cCnt, 19].Value),
+                    Heredity = Convert.ToString(workSheet.Cells[cCnt, 20].Value),
+                    DisabilityGroup = Convert.ToString(workSheet.Cells[cCnt, 21].Value),
+                    DisabilityStatus = Convert.ToString(workSheet.Cells[cCnt, 22].Value),
+                    ReasonForDisability = Convert.ToString(workSheet.Cells[cCnt, 23].Value),
+                    WorksStatus = Convert.ToString(workSheet.Cells[cCnt, 24].Value),
+                    AdmOtv = Convert.ToString(workSheet.Cells[cCnt, 25].Value),
+                    UgOtv = Convert.ToString(workSheet.Cells[cCnt, 26].Value),
+                    DlitsMLS = Convert.ToString(workSheet.Cells[cCnt, 27].Value),
+                    Stat107 = Convert.ToString(workSheet.Cells[cCnt, 28].Value),
+                    StatUKRB = Convert.ToString(workSheet.Cells[cCnt, 29].Value),
+                    RodPrav = Convert.ToString(workSheet.Cells[cCnt, 30].Value),
+                    NomLTP = Convert.ToString(workSheet.Cells[cCnt, 31].Value),
+                    LTPKol = Convert.ToString(workSheet.Cells[cCnt, 32].Value),
+                    Hospitel = Convert.ToString(workSheet.Cells[cCnt, 33].Value),
+                    EK = Convert.ToString(workSheet.Cells[cCnt, 34].Value),
+                    DateOfDeregistration = Convert.ToString(workSheet.Cells[cCnt, 35].Value),
+                    DateOfDead = Convert.ToString(workSheet.Cells[cCnt, 36].Value),
+                    PlaceOfDead = Convert.ToString(workSheet.Cells[cCnt, 37].Value),
+                    DeathCertificate = Convert.ToString(workSheet.Cells[cCnt, 38].Value),
+                    CauseOfDead = Convert.ToString(workSheet.Cells[cCnt, 39].Value),
+                    DeathCategory = Convert.ToString(workSheet.Cells[cCnt, 40].Value),
+                    OpeningPlace = Convert.ToString(workSheet.Cells[cCnt, 41].Value),
+                    HistoryOfParasucicides = Convert.ToString(workSheet.Cells[cCnt, 42].Value),
+                    FeaturesOfObservation = Convert.ToString(workSheet.Cells[cCnt, 43].Value),
+                    ExperienceAbuse = Convert.ToString(workSheet.Cells[cCnt, 44].Value),
+                    AlcoholicDrinks = Convert.ToString(workSheet.Cells[cCnt, 45].Value),
+                    IK = Convert.ToString(workSheet.Cells[cCnt, 46].Value),
+                    DrugDiagnosisAlc = Convert.ToString(workSheet.Cells[cCnt, 47].Value),
+                    IntranozologicalComorbidity = Convert.ToString(workSheet.Cells[cCnt, 48].Value),
+                    TypeOfDrug = Convert.ToString(workSheet.Cells[cCnt, 49].Value),
+                    DrugUse = Convert.ToString(workSheet.Cells[cCnt, 50].Value),
+                    YearOfFirstUse = Convert.ToString(workSheet.Cells[cCnt, 51].Value),
+                    ExperienceAbuseDrug = Convert.ToString(workSheet.Cells[cCnt, 52].Value),
+                    Remissions = Convert.ToString(workSheet.Cells[cCnt, 53].Value),
+                    RemissionNumber = Convert.ToString(workSheet.Cells[cCnt, 54].Value),
+                    RemissionTimer = Convert.ToString(workSheet.Cells[cCnt, 55].Value),
+                    DrugDiagnosisX = Convert.ToString(workSheet.Cells[cCnt, 56].Value),
+                    AgeOfRegistration = Convert.ToString(workSheet.Cells[cCnt, 57].Value),
+                    AgeOfDead = Convert.ToString(workSheet.Cells[cCnt, 58].Value),
+                    DataInfo = Convert.ToString(workSheet.Cells[cCnt, 59].Value),
+                    Registrotor = Convert.ToString(workSheet.Cells[cCnt, 60].Value)
+                };
+                Alco_Narco_Person.Add(polizavis);
+            }
+            workBook.Close();
+            excelApp.Quit();
         }
 
         /// <summary>

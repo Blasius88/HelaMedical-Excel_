@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HelaMedical"
         mc:Ignorable="d"
-        Title="HelaMedical Алкоголизм" WindowState="Maximized">
+        Title="HelaMedical Алкоголизм" WindowState="Maximized" Height="1200" Width="1900">
     <Grid>
         <ScrollViewer Name="scroll" 
                       CanContentScroll="True"

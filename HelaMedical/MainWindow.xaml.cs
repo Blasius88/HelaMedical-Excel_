@@ -3,7 +3,6 @@ using System.Data.Entity;
 using System.Windows;
 using HelaMedical.Class;
 using HelaMedical.Excep;
-using HelaMedical.DbContexte;
 using System.IO;
 using System.Data.SqlClient;
 using System.Data.Entity.Core.EntityClient;
@@ -20,9 +19,6 @@ namespace HelaMedical
             try
             {
                 ReadPerson.Reader_Excel_Person();
-                //FileLoad();
-                //db = new ApplicationContext();
-                //db.Incitalizations.Load(); //загружаем из бд именна 
                 InitializeComponent();
             }
             catch (Exception excep)

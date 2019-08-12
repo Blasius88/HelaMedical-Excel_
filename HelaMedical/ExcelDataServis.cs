@@ -8,6 +8,8 @@ using Excel = Microsoft.Office.Interop.Excel;
 using System.Collections.Generic;
 using System.Windows;
 using HelaMedical.Excep;
+using System.Data.Entity;
+using System.Windows.Controls;
 
 namespace HelaMedical
 {
