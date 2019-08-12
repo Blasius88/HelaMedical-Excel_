@@ -361,14 +361,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Class\Person.cs" />
-    <Compile Include="DbContexte\DBConection.cs" />
-    <Compile Include="DbContexte\Entity.cs" />
     <Compile Include="ExcelServis.cs" />
+    <Compile Include="Logic\LogicaOne.cs" />
     <Compile Include="ReadPerson.cs" />
-    <Page Include="Diagramm.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Generate_A_Report.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -397,16 +392,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DbContexte\ApplicationContext.cs" />
     <Compile Include="Class\Alco.cs" />
     <Compile Include="Class\Bool.cs" />
     <Compile Include="Class\Incitalization.cs" />
     <Compile Include="Class\Narcoman.cs" />
     <Compile Include="Class\Other.cs" />
     <Compile Include="Class\Polizavis.cs" />
-    <Compile Include="Diagramm.xaml.cs">
-      <DependentUpon>Diagramm.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ExcelDataServis.cs" />
     <Compile Include="Excep\ExcepLog.cs" />
     <Compile Include="Generate_A_Report.xaml.cs">
@@ -472,7 +463,15 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="File\Data.xlsx" />
+    <None Include="File\AlcoDataBase.xlsx" />
+    <None Include="File\AlcoReport.xlsx" />
+    <None Include="File\INC2.INI" />
+    <None Include="File\INC3.INI" />
+    <None Include="File\NarcoDataBase.xlsx" />
+    <None Include="File\NarcoReport.xlsx" />
+    <None Include="File\Person.xlsx" />
+    <None Include="File\PolizavisDataBase.xlsx" />
+    <None Include="File\PolizavisReport.xlsx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="HelaMedical Формирование отчета" Height="1080" Width="1920" WindowState="Maximized">
     <Window.Resources>
-       
+
     </Window.Resources>
 
     <Grid>
@@ -19,6 +19,7 @@
 
         <Grid Grid.Column="0">
             <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
                 <RowDefinition Height="50"/>
                 <RowDefinition Height="50"/>
                 <RowDefinition Height="50"/>
@@ -67,17 +68,19 @@
                         Click="Excel_Click"/>
             </Grid>
             <Grid Grid.Row="10">
-                <Button Content="Построить диаграммы"
-                        Name ="Diagramm"
-                        Style="{StaticResource Button}"
-                        Click="Diagramm_Click"/>
+            
             </Grid>
             <Grid Grid.Row="11">
+                <Button Content="Выгрузить по дате учета" 
+                Style="{StaticResource Button}"
+                IsEnabled="{Binding ElementName=TypeOfAddiction, Path=Text.Length}"
+                Click="Button_Click"/>
             </Grid>
         </Grid>
 
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
                 <RowDefinition Height="50"/>
                 <RowDefinition Height="50"/>
                 <RowDefinition Height="50"/>
@@ -176,6 +179,9 @@
                         Name="Back"
                         Click="Back_Click"/>
             </Grid>
+            <Grid Grid.Row="11">
+                <TextBox Name="downlReg"/>
+            </Grid>
         </Grid>
 
         <Grid Grid.Column="2">
@@ -210,5 +216,6 @@
                 </DataGrid.Columns>
             </DataGrid>
         </Grid>
+
     </Grid>
 </Window>

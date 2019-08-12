@@ -8,6 +8,8 @@ using Excel = Microsoft.Office.Interop.Excel;
 using System.Collections.Generic;
 using System.Windows;
 using HelaMedical.Excep;
+using System.Data.Entity;
+using System.Windows.Controls;
 
 namespace HelaMedical
 {
@@ -173,6 +175,87 @@ namespace HelaMedical
 
                         
                     }
+                }
+                workBook.Save();
+                workBook.Close();
+                excelApp.Quit();
+            }
+            catch (Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                ExcepLog.Excep(excep);
+                Excel.Application excelApp = new Excel.Application();
+                excelApp.Quit();
+            }
+        }
+
+        //Сохранение колекции по алко по дате 
+        public static void Save_Report_Excel_Alco(List<Alco> alcos, int col)
+        {
+            try
+            {
+                string ExcelFilePath = @"d:\HelaMedical\HelaMedical\File\AlcoDataBaseByDate.xlsx";
+
+                Excel.Application excelApp = new Excel.Application();
+                Workbook workBook;
+                Worksheet workSheet;
+                workBook = excelApp.Workbooks.Open(ExcelFilePath);
+                workSheet = (Excel.Worksheet)workBook.Worksheets.get_Item(1);
+
+                // Получаем активную таблицу
+                for (int i = 0; i < col+1; i++)
+                {
+                    workSheet.Cells[i, 1] = alcos[i].Id;
+                    workSheet.Cells[i, 2] = alcos[i].FIO;
+                    workSheet.Cells[i, 3] = alcos[i].Sex;
+                    workSheet.Cells[i, 4] = alcos[i].Date;
+                    workSheet.Cells[i, 5] = alcos[i].RegionCenterBLR;
+                    workSheet.Cells[i, 6] = alcos[i].RaenCenterBLR;
+                    workSheet.Cells[i, 7] = alcos[i].Life;
+                    workSheet.Cells[i, 8] = alcos[i].Age;
+                    workSheet.Cells[i, 9] = alcos[i].FamilyStatus;
+                    workSheet.Cells[i, 10] = alcos[i].CostOfKids;
+                    workSheet.Cells[i, 11] = alcos[i].FamilyComposition;
+                    workSheet.Cells[i, 12] = alcos[i].Education;
+                    workSheet.Cells[i, 13] = alcos[i].Profession;
+                    workSheet.Cells[i, 14] = alcos[i].TheSkillLevelOfTheProfession;
+                    workSheet.Cells[i, 15] = alcos[i].AddressOfRegistration;
+                    workSheet.Cells[i, 16] = alcos[i].AddressAtTheTimeOfDeath;
+                    workSheet.Cells[i, 17] = alcos[i].DataOfRegistration;
+                    workSheet.Cells[i, 18] = alcos[i].ReRegistrationData;
+                    workSheet.Cells[i, 19] = alcos[i].TypeOfRegistration;
+                    workSheet.Cells[i, 20] = alcos[i].Heredity;
+                    workSheet.Cells[i, 21] = alcos[i].DisabilityGroup;
+                    workSheet.Cells[i, 22] = alcos[i].DisabilityStatus;
+                    workSheet.Cells[i, 23] = alcos[i].ReasonForDisability;
+                    workSheet.Cells[i, 24] = alcos[i].WorksStatus;
+                    workSheet.Cells[i, 25] = alcos[i].AdmOtv;
+                    workSheet.Cells[i, 26] = alcos[i].UgOtv;
+                    workSheet.Cells[i, 27] = alcos[i].DlitsMLS;
+                    workSheet.Cells[i, 28] = alcos[i].Stat107;
+                    workSheet.Cells[i, 29] = alcos[i].StatUKRB;
+                    workSheet.Cells[i, 30] = alcos[i].RodPrav;
+                    workSheet.Cells[i, 31] = alcos[i].NomLTP;
+                    workSheet.Cells[i, 32] = alcos[i].LTPKol;
+                    workSheet.Cells[i, 33] = alcos[i].Hospitel;
+                    workSheet.Cells[i, 34] = alcos[i].EK;
+                    workSheet.Cells[i, 35] = alcos[i].DateOfDeregistration;
+                    workSheet.Cells[i, 36] = alcos[i].DateOfDead;
+                    workSheet.Cells[i, 37] = alcos[i].PlaceOfDead;
+                    workSheet.Cells[i, 38] = alcos[i].DeathCertificate;
+                    workSheet.Cells[i, 39] = alcos[i].CauseOfDead;
+                    workSheet.Cells[i, 40] = alcos[i].DeathCategory;
+                    workSheet.Cells[i, 41] = alcos[i].OpeningPlace;
+                    workSheet.Cells[i, 42] = alcos[i].HistoryOfParasucicides;
+                    workSheet.Cells[i, 43] = alcos[i].FeaturesOfObservation;
+                    workSheet.Cells[i, 44] = alcos[i].ExperienceAbuse;
+                    workSheet.Cells[i, 45] = alcos[i].AlcoholicDrinks;
+                    workSheet.Cells[i, 46] = alcos[i].IK;
+                    workSheet.Cells[i, 47] = alcos[i].DrugDiagnosisAlc;
+                    workSheet.Cells[i, 48] = alcos[i].AgeOfRegistration;
+                    workSheet.Cells[i, 49] = alcos[i].AgeOfDead;
+                    workSheet.Cells[i, 50] = alcos[i].DataInfo;
+                    workSheet.Cells[i, 51] = alcos[i].Registrotor;
                 }
                 workBook.Save();
                 workBook.Close();
@@ -372,12 +455,99 @@ namespace HelaMedical
                     workSheet.Cells[i, 53] = Drug_Addiction[0].AgeOfRegistration;
                     workSheet.Cells[i, 54] = Drug_Addiction[0].AgeOfDead;
                     workSheet.Cells[i, 55] = Drug_Addiction[0].DataInfo;
-                    workSheet.Cells[i, 55] = Drug_Addiction[0].Registrotor;
+                    workSheet.Cells[i, 56] = Drug_Addiction[0].Registrotor;
                 }
             }
             workBook.Save();
             workBook.Close();
             excelApp.Quit();
+        }
+
+
+        //Сохранение колекции по алко по дате 
+        public static void Save_Report_Excel_Narco(List<Narcoman> narcos, int col)
+        {
+            try
+            {
+                string ExcelFilePath = @"d:\HelaMedical\HelaMedical\File\NarcoDataBaseByDate.xlsx";
+
+                Excel.Application excelApp = new Excel.Application();
+                Workbook workBook;
+                Worksheet workSheet;
+                workBook = excelApp.Workbooks.Open(ExcelFilePath);
+                workSheet = (Excel.Worksheet)workBook.Worksheets.get_Item(1);
+
+                // Получаем активную таблицу
+                for (int i = 0; i < col + 1; i++)
+                {
+                    workSheet.Cells[i, 1] = narcos[i].Id;
+                    workSheet.Cells[i, 2] = narcos[i].FIO;
+                    workSheet.Cells[i, 3] = narcos[i].Sex;
+                    workSheet.Cells[i, 4] = narcos[i].Date;
+                    workSheet.Cells[i, 5] = narcos[i].RegionCenterBLR;
+                    workSheet.Cells[i, 6] = narcos[i].RaenCenterBLR;
+                    workSheet.Cells[i, 7] = narcos[i].Life;
+                    workSheet.Cells[i, 8] = narcos[i].Age;
+                    workSheet.Cells[i, 9] = narcos[i].FamilyStatus;
+                    workSheet.Cells[i, 10] = narcos[i].CostOfKids;
+                    workSheet.Cells[i, 11] = narcos[i].FamilyComposition;
+                    workSheet.Cells[i, 12] = narcos[i].Education;
+                    workSheet.Cells[i, 13] = narcos[i].Profession;
+                    workSheet.Cells[i, 14] = narcos[i].TheSkillLevelOfTheProfession;
+                    workSheet.Cells[i, 15] = narcos[i].AddressOfRegistration;
+                    workSheet.Cells[i, 16] = narcos[i].AddressAtTheTimeOfDeath;
+                    workSheet.Cells[i, 17] = narcos[i].DataOfRegistration;
+                    workSheet.Cells[i, 18] = narcos[i].ReRegistrationData;
+                    workSheet.Cells[i, 19] = narcos[i].TypeOfRegistration;
+                    workSheet.Cells[i, 20] = narcos[i].Heredity;
+                    workSheet.Cells[i, 21] = narcos[i].DisabilityGroup;
+                    workSheet.Cells[i, 22] = narcos[i].DisabilityStatus;
+                    workSheet.Cells[i, 23] = narcos[i].ReasonForDisability;
+                    workSheet.Cells[i, 24] = narcos[i].WorksStatus;
+                    workSheet.Cells[i, 25] = narcos[i].AdmOtv;
+                    workSheet.Cells[i, 26] = narcos[i].UgOtv;
+                    workSheet.Cells[i, 27] = narcos[i].DlitsMLS;
+                    workSheet.Cells[i, 28] = narcos[i].Stat107;
+                    workSheet.Cells[i, 29] = narcos[i].StatUKRB;
+                    workSheet.Cells[i, 30] = narcos[i].RodPrav;
+                    workSheet.Cells[i, 31] = narcos[i].NomLTP;
+                    workSheet.Cells[i, 32] = narcos[i].LTPKol;
+                    workSheet.Cells[i, 33] = narcos[i].Hospitel;
+                    workSheet.Cells[i, 34] = narcos[i].EK;
+                    workSheet.Cells[i, 35] = narcos[i].DateOfDeregistration;
+                    workSheet.Cells[i, 36] = narcos[i].DateOfDead;
+                    workSheet.Cells[i, 37] = narcos[i].PlaceOfDead;
+                    workSheet.Cells[i, 38] = narcos[i].DeathCertificate;
+                    workSheet.Cells[i, 39] = narcos[i].CauseOfDead;
+                    workSheet.Cells[i, 40] = narcos[i].DeathCategory;
+                    workSheet.Cells[i, 41] = narcos[i].OpeningPlace;
+                    workSheet.Cells[i, 42] = narcos[i].HistoryOfParasucicides;
+                    workSheet.Cells[i, 43] = narcos[i].FeaturesOfObservation;
+                    workSheet.Cells[i, 44] = narcos[i].IntranozologicalComorbidity;
+                    workSheet.Cells[i, 45] = narcos[i].TypeOfDrug;
+                    workSheet.Cells[i, 46] = narcos[i].DrugUse;
+                    workSheet.Cells[i, 47] = narcos[i].YearOfFirstUse;
+                    workSheet.Cells[i, 48] = narcos[i].ExperienceAbuseDrug;
+                    workSheet.Cells[i, 49] = narcos[i].Remissions;
+                    workSheet.Cells[i, 50] = narcos[i].RemissionNumber;
+                    workSheet.Cells[i, 51] = narcos[i].RemissionTimer;
+                    workSheet.Cells[i, 52] = narcos[i].DrugDiagnosisX;
+                    workSheet.Cells[i, 53] = narcos[i].AgeOfRegistration;
+                    workSheet.Cells[i, 54] = narcos[i].AgeOfDead;
+                    workSheet.Cells[i, 55] = narcos[i].DataInfo;
+                    workSheet.Cells[i, 56] = narcos[i].Registrotor;
+                }
+                workBook.Save();
+                workBook.Close();
+                excelApp.Quit();
+            }
+            catch (Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                ExcepLog.Excep(excep);
+                Excel.Application excelApp = new Excel.Application();
+                excelApp.Quit();
+            }
         }
 
         /// <summary>
@@ -563,13 +733,103 @@ namespace HelaMedical
                     workSheet.Cells[i, 56] = Alco_Narco_Person[0].DrugDiagnosisX;
                     workSheet.Cells[i, 57] = Alco_Narco_Person[0].AgeOfRegistration;
                     workSheet.Cells[i, 58] = Alco_Narco_Person[0].AgeOfDead;
-                    workSheet.Cells[i, 58] = Alco_Narco_Person[0].DataInfo;
-                    workSheet.Cells[i, 59] = Alco_Narco_Person[0].Registrotor;
+                    workSheet.Cells[i, 59] = Alco_Narco_Person[0].DataInfo;
+                    workSheet.Cells[i, 60] = Alco_Narco_Person[0].Registrotor;
                 }
             }
             workBook.Save();
             workBook.Close();
             excelApp.Quit();
+        }
+
+        //запись данных по выбору 
+        public static void Save_Report_Excel_Poliz(List<Polizavis> poliz, int col)
+        {
+            try
+            {
+                string ExcelFilePath = @"d:\HelaMedical\HelaMedical\File\NarcoDataBaseByDate.xlsx";
+
+                Excel.Application excelApp = new Excel.Application();
+                Workbook workBook;
+                Worksheet workSheet;
+                workBook = excelApp.Workbooks.Open(ExcelFilePath);
+                workSheet = (Excel.Worksheet)workBook.Worksheets.get_Item(1);
+
+                // Получаем активную таблицу
+                for (int i = 0; i < col + 1; i++)
+                {
+                    workSheet.Cells[i, 1] = poliz[i].Id;
+                    workSheet.Cells[i, 2] = poliz[i].FIO;
+                    workSheet.Cells[i, 3] = poliz[i].Sex;
+                    workSheet.Cells[i, 4] = poliz[i].Date;
+                    workSheet.Cells[i, 5] = poliz[i].RegionCenterBLR;
+                    workSheet.Cells[i, 6] = poliz[i].RaenCentrBLR;
+                    workSheet.Cells[i, 7] = poliz[i].Life;
+                    workSheet.Cells[i, 8] = poliz[i].Age;
+                    workSheet.Cells[i, 9] = poliz[i].FamilyStatus;
+                    workSheet.Cells[i, 10] = poliz[i].CostOfKids;
+                    workSheet.Cells[i, 11] = poliz[i].FamilyComposition;
+                    workSheet.Cells[i, 12] = poliz[i].Education;
+                    workSheet.Cells[i, 13] = poliz[i].Profession;
+                    workSheet.Cells[i, 14] = poliz[i].TheSkillLevelOfTheProfession;
+                    workSheet.Cells[i, 15] = poliz[i].AddressOfRegistration;
+                    workSheet.Cells[i, 16] = poliz[i].AddressAtTheTimeOfDeath;
+                    workSheet.Cells[i, 17] = poliz[i].DataOfRegistration;
+                    workSheet.Cells[i, 18] = poliz[i].ReRegistrationData;
+                    workSheet.Cells[i, 19] = poliz[i].TypeOfRegistration;
+                    workSheet.Cells[i, 20] = poliz[i].Heredity;
+                    workSheet.Cells[i, 21] = poliz[i].DisabilityGroup;
+                    workSheet.Cells[i, 22] = poliz[i].DisabilityStatus;
+                    workSheet.Cells[i, 23] = poliz[i].ReasonForDisability;
+                    workSheet.Cells[i, 24] = poliz[i].WorksStatus;
+                    workSheet.Cells[i, 25] = poliz[i].AdmOtv;
+                    workSheet.Cells[i, 26] = poliz[i].UgOtv;
+                    workSheet.Cells[i, 27] = poliz[i].DlitsMLS;
+                    workSheet.Cells[i, 28] = poliz[i].Stat107;
+                    workSheet.Cells[i, 29] = poliz[i].StatUKRB;
+                    workSheet.Cells[i, 30] = poliz[i].RodPrav;
+                    workSheet.Cells[i, 31] = poliz[i].NomLTP;
+                    workSheet.Cells[i, 32] = poliz[i].LTPKol;
+                    workSheet.Cells[i, 33] = poliz[i].Hospitel;
+                    workSheet.Cells[i, 34] = poliz[i].EK;
+                    workSheet.Cells[i, 35] = poliz[i].DateOfDeregistration;
+                    workSheet.Cells[i, 36] = poliz[i].DateOfDead;
+                    workSheet.Cells[i, 37] = poliz[i].PlaceOfDead;
+                    workSheet.Cells[i, 38] = poliz[i].DeathCertificate;
+                    workSheet.Cells[i, 39] = poliz[i].CauseOfDead;
+                    workSheet.Cells[i, 40] = poliz[i].DeathCategory;
+                    workSheet.Cells[i, 41] = poliz[i].OpeningPlace;
+                    workSheet.Cells[i, 42] = poliz[i].HistoryOfParasucicides;
+                    workSheet.Cells[i, 43] = poliz[i].FeaturesOfObservation;
+                    workSheet.Cells[i, 44] = poliz[i].ExperienceAbuse;
+                    workSheet.Cells[i, 45] = poliz[i].AlcoholicDrinks;
+                    workSheet.Cells[i, 46] = poliz[i].IK;
+                    workSheet.Cells[i, 47] = poliz[i].DrugDiagnosisAlc;
+                    workSheet.Cells[i, 48] = poliz[i].IntranozologicalComorbidity;
+                    workSheet.Cells[i, 49] = poliz[i].TypeOfDrug;
+                    workSheet.Cells[i, 50] = poliz[i].DrugUse;
+                    workSheet.Cells[i, 51] = poliz[i].YearOfFirstUse;
+                    workSheet.Cells[i, 52] = poliz[i].ExperienceAbuseDrug;
+                    workSheet.Cells[i, 53] = poliz[i].Remissions;
+                    workSheet.Cells[i, 54] = poliz[i].RemissionNumber;
+                    workSheet.Cells[i, 55] = poliz[i].RemissionTimer;
+                    workSheet.Cells[i, 56] = poliz[i].DrugDiagnosisX;
+                    workSheet.Cells[i, 57] = poliz[i].AgeOfRegistration;
+                    workSheet.Cells[i, 58] = poliz[i].AgeOfDead;
+                    workSheet.Cells[i, 59] = poliz[i].DataInfo;
+                    workSheet.Cells[i, 60] = poliz[i].Registrotor;
+                }
+                workBook.Save();
+                workBook.Close();
+                excelApp.Quit();
+            }
+            catch (Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                ExcepLog.Excep(excep);
+                Excel.Application excelApp = new Excel.Application();
+                excelApp.Quit();
+            }
         }
 
         /// <summary>

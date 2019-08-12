@@ -12,33 +12,13 @@ namespace HelaMedical
     /// </summary>
     public partial class Interface : Window
     {
-        ApplicationContext db;
         public List<Alco> alcoFindPerson = new List<Alco>();
         public List<Narcoman> narcoFindPerson = new List<Narcoman>();
         public List<Polizavis> polizFindPerson = new List<Polizavis>();
 
         public Interface()
         {
-            db = new ApplicationContext();
-            //ExcelDataServis.Reader_Excel_Alco();
-            //ExcelDataServis.Reader_Excel_Narco();
-            //ExcelDataServis.Reader_Excel_Alco_Narco_Person();
             InitializeComponent();
-            this.Closing += Generate_A_Report_Closing;
-        }
-
-        private void Generate_A_Report_Closing(object sender, CancelEventArgs e)
-        {
-            try
-            {
-                if (db != null) db.Dispose();
-                DbContexte.DBConection.Closed();
-            }
-            catch (Exception excep)
-            {
-                MessageBox.Show(excep.Message);
-                ExcepLog.Excep(excep);
-            }
         }
 
         /// <summary>

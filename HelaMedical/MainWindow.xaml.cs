@@ -3,7 +3,6 @@ using System.Data.Entity;
 using System.Windows;
 using HelaMedical.Class;
 using HelaMedical.Excep;
-using HelaMedical.DbContexte;
 using System.IO;
 using System.Data.SqlClient;
 using System.Data.Entity.Core.EntityClient;
@@ -20,9 +19,6 @@ namespace HelaMedical
             try
             {
                 ReadPerson.Reader_Excel_Person();
-                //FileLoad();
-                //db = new ApplicationContext();
-                //db.Incitalizations.Load(); //загружаем из бд именна 
                 InitializeComponent();
             }
             catch (Exception excep)
@@ -41,20 +37,6 @@ namespace HelaMedical
             newPersonal.Show();
         }
 
-        //public void FileLoad()
-        //{
-        //    try
-        //    {
-        //        string path = @"d:\HelaMedical\HelaMedical\File\Person.xcls";
-        //        string s = File.ReadAllText(path);
-        //        DBConection.Select(s);
-        //    }
-        //    catch (Exception excep)
-        //    {
-        //        MessageBox.Show(excep.Message);
-        //        ExcepLog.Excep(excep);
-        //    }
-        //}
 
         /// <summary>
         /// Вход в систему

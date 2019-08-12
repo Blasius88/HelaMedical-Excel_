@@ -13,8 +13,6 @@ namespace HelaMedical
     /// </summary>
     public partial class NewPersonalWindow : Window
     {
-        ApplicationContext db;
-
         public NewPersonalWindow()
         {
             InitializeComponent();
@@ -39,8 +37,6 @@ namespace HelaMedical
         {
             try
             {
-                //Download_Database();
-
                 int a = 0;
                 string fio = NewPersonalFIO.Text;
                 //проверяем пустое ли поле
@@ -102,67 +98,11 @@ namespace HelaMedical
                     ReadPerson.Patient_Сreation_Person(fio, position, pass);
                     Close();
                 }
-
             }
             catch (Exception excep)
             {
                 MessageBox.Show(excep.Message);
                 ExcepLog.Excep(excep);
-            }
-        }
-
-        /// <summary>
-        /// Функция добавления персонала 
-        /// </summary>
-        /// <param name="fio"></param>
-        /// <param name="position"></param>
-        /// <param name="pass"></param>
-        public static void CreatPerson(string fio, string position, string pass)
-        {
-            try
-            {
-                ApplicationContext db = new ApplicationContext();
-                db.Incitalizations.Load();
-                foreach (var item in db.Incitalizations)
-                {
-                    Inci.Add(item);
-                }
-
-                int intId = 0;
-                for (int i = 0; i < Inci.Count; i++)
-                {
-                    intId ++;
-                }
-
-                Incitalization person = new Incitalization
-                {
-                    Id = intId,
-                    Name = fio,
-                    Pass = pass,
-                    Pasition = position
-                };
-                db.Incitalizations.Add(person);
-                db.SaveChanges();
-                MessageBox.Show("Регистрация прошла успешна");
-                db.Dispose();
-            }
-            catch (Exception excep)
-            {
-                MessageBox.Show(excep.Message);
-                ExcepLog.Excep(excep);
-            }
-        }
-
-        /// <summary>
-        /// загрузка данных из базы
-        /// </summary>
-        public void Download_Database()
-        {
-            db = new ApplicationContext();
-            db.Incitalizations.Load();
-            foreach (var item in db.Incitalizations)
-            {
-                Inci.Add(item);
             }
         }
     }

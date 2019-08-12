@@ -3,7 +3,6 @@ using System.Windows;
 using HelaMedical.Class;
 using System.Windows.Media;
 using HelaMedical.Excep;
-using HelaMedical.DbContexte;
 
 namespace HelaMedical
 {
