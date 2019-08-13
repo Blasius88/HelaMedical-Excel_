@@ -1498,61 +1498,7 @@ namespace HelaMedical
         /// <param name="e"></param>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                int col = 0;
-                //сформировать отчет по алкогольной зависимости
-                if (_typeOfAddiction == "Алкогольная")
-                {
-                    ExcelServis.Read_Alco();
-                    List<Alco> alcot = new List<Alco>();
-                    for (int i = 0; i < Alco.AlcoholismPersona.Count; i++)
-                    {
-                        if (Alco.AlcoholismPersona[i].DataInfo == downlReg.Text)
-                        {
-                            alcot.Add(Alco.AlcoholismPersona[i]);
-                            col++;
-                        }
-                    }
-                    ExcelDataServis.Save_Report_Excel_Alco(alcot, col);
-                }
-                //сформировать отчет по наркозависимости
-                else if (_typeOfAddiction == "Наркотическая")
-                {
-                    ExcelServis.Read_Narco();
-                    List<Narcoman> narcot = new List<Narcoman>();
-                    for (int i = 0; i < Narcoman.Drug_Addiction.Count; i++)
-                    {
-                        if (Narcoman.Drug_Addiction[i].DataInfo == downlReg.Text)
-                        {
-                            narcot.Add(Narcoman.Drug_Addiction[i]);
-                            col++;
-                        }
-                    }
-                    ExcelDataServis.Save_Report_Excel_Narco(narcot, col);
-                }
-                //сформировать отчет по полизависимости
-                else if (_typeOfAddiction == "Полизависимость")
-                {
-                    ExcelServis.Read_Poliz();
-                    List<Polizavis> polizt = new List<Polizavis>();
-                    for (int i = 0; i < Polizavis.Alco_Narco_Person.Count; i++)
-                    {
-                        if (Polizavis.Alco_Narco_Person[i].DataInfo == downlReg.Text)
-                        {
-                            polizt.Add(Polizavis.Alco_Narco_Person[i]);
-                            col++;
-                        }
-                    }
-                    ExcelDataServis.Save_Report_Excel_Poliz(polizt, col);
-                }
-            }
 
-            catch (Exception excep)
-            {
-                MessageBox.Show(excep.Message);
-                ExcepLog.Excep(excep);
-            }
         }
     }
 }
