@@ -401,8 +401,13 @@ namespace HelaMedical
 
                 //областной центр берет из страницы OblReg
                 string regionCenterBLR = Other.Obl;
-
                 string raenCentrBLR = Other.Reg;
+                if (Other.Obl == null)
+                {
+                    check = false;
+                    OblReg oblReg = new OblReg();
+                    oblReg.Show();
+                }
 
                 string life = Life.Text;
                 if (life =="")
@@ -447,19 +452,9 @@ namespace HelaMedical
                     check = false;
                 }
                 string profession = Profession.Text;
-                if (profession == "")
-                {
-                    Profession.BorderThickness = new Thickness(3);
-                    Profession.BorderBrush = Brushes.Red;
-                    check = false;
-                }
+               
                 string theSkillLevelOfTheProfession = TheSkillLevelOfTheProfession.Text;
-                if (theSkillLevelOfTheProfession == "")
-                {
-                    TheSkillLevelOfTheProfession.BorderThickness = new Thickness(3);
-                    TheSkillLevelOfTheProfession.BorderBrush = Brushes.Red;
-                    check = false;
-                }
+                
                 //Постановка на учет 
                 string addressOfRegistration = AddressOfRegistration.Text;
                 string addressAtTheTimeOfDeath = AddressAtTheTimeOfDeath.Text;
@@ -1034,7 +1029,7 @@ namespace HelaMedical
                     try
                     {
                         string[] mas = data.Split('.', ',', '/');
-                        string[] mas1 = dateOfDead.Split('.', ',', '/');
+                        string[] mas1 = dateOfDead.Split('.', ',', '/', '(');
                         int a = Convert.ToInt32(mas[2]);
                         int b = Convert.ToInt32(mas1[2]);
                         ab = b - a;

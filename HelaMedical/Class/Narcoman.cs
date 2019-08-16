@@ -6,7 +6,7 @@ namespace HelaMedical.Class
 {
     public class Narcoman : INotifyPropertyChanged
     {
-        public int Id { get; set; } // Id  
+        public string Id { get; set; } // Id  
         public string FIO { get; set; } // фамилия 
         public string Sex { get; set; } // пол
         public string Date { get; set; } // дата рождения 

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HelaMedical"
         mc:Ignorable="d"
-        Title="HelaMedical Формирование отчета" Height="1080" Width="1920" WindowState="Maximized">
+        Title="HelaMedical Формирование отчета" WindowState="Maximized" Height="1200">
     <Window.Resources>
 
     </Window.Resources>

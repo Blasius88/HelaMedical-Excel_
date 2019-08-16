@@ -305,8 +305,13 @@ namespace HelaMedical
                     check = false;
                 }
                 string regionCenterBLR = Other.Obl;
-
                 string raenCenterBLR = Other.Reg;
+                if (Other.Obl == null)
+                {
+                    check = false;
+                    OblReg oblReg = new OblReg();
+                    oblReg.Show();
+                }
 
                 string life = Life.Text;
                 if (life == "")
@@ -351,19 +356,8 @@ namespace HelaMedical
                     check = false;
                 }
                 string profession = Profession.Text;
-                if (profession == "")
-                {
-                    Profession.BorderThickness = new Thickness(3);
-                    Profession.BorderBrush = Brushes.Red;
-                    check = false;
-                }
+                
                 string theSkillLevelOfTheProfession = TheSkillLevelOfTheProfession.Text;
-                if (theSkillLevelOfTheProfession == "")
-                {
-                    TheSkillLevelOfTheProfession.BorderThickness = new Thickness(3);
-                    TheSkillLevelOfTheProfession.BorderBrush = Brushes.Red;
-                    check = false;
-                }
 
                 //Постановка на учет 
                 string addressOfRegistration = AddressOfRegistration.Text;

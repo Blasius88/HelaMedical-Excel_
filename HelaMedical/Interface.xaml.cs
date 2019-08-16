@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Windows;
 using HelaMedical.Class;
 using HelaMedical.Excep;
+using System.Data.Entity;
+using System.Windows.Controls;
 
 namespace HelaMedical
 {
@@ -65,18 +67,6 @@ namespace HelaMedical
             generate_A_Report.Show();
         }
 
-
-        /// <summary>
-        /// Создать новый персонал
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
-        {
-            NewPersonalWindow newPersonalWindow = new NewPersonalWindow();
-            newPersonalWindow.Show();
-        }
-
         /// <summary>
         /// Выбрать Область и регион
         /// </summary>
@@ -89,67 +79,78 @@ namespace HelaMedical
         /// <summary>
         /// Поиск карты пациента 
         /// </summary>
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void Button_Click(object sender, RoutedEventArgs e)
         {
             bool check_alco = false;
             bool check_narco = false;
             bool check_poliz = false;
+
             string findperson = FindPerson.Text;
+            bool check = false;
 
             //Очищаем память перед записью новой информации 
             alcoFindPerson.Clear();
             narcoFindPerson.Clear();
             polizFindPerson.Clear();
-
+            ExcelDataServis.Read_Alco();
             //Ищим инфу в колекциях
             for (int i = 0; i < Alco.AlcoholismPersona.Count; i++)
             {
                 if (findperson == Alco.AlcoholismPersona[i].FIO)
                 {
                     check_alco = true;
+                    check = true;
                     alcoFindPerson.Add(Alco.AlcoholismPersona[i]);
                 }
             }
-            
-            for (int i = 0; i < Narcoman.Drug_Addiction.Count; i ++)
+            if (check == false)
             {
-                if (findperson == Narcoman.Drug_Addiction[i].FIO)
+                ExcelDataServis.Read_Narco();
+                for (int i = 0; i < Narcoman.Drug_Addiction.Count; i++)
                 {
-                    check_narco = true;
-                    narcoFindPerson.Add(Narcoman.Drug_Addiction[i]);
+                    if (findperson == Narcoman.Drug_Addiction[i].FIO)
+                    {
+                        check_narco = true;
+                        check = true;
+                        narcoFindPerson.Add(Narcoman.Drug_Addiction[i]);
+                    }
                 }
             }
-            
-            for (int i = 0; i < Polizavis.Alco_Narco_Person.Count; i++)
+            else
             {
-                if (findperson == Polizavis.Alco_Narco_Person[i].FIO)
+                ExcelDataServis.Read_Poliz();
+                for (int i = 0; i < Polizavis.Alco_Narco_Person.Count; i++)
                 {
-                    check_poliz = true;
-                    polizFindPerson.Add(Polizavis.Alco_Narco_Person[i]);
+                    if (findperson == Polizavis.Alco_Narco_Person[i].FIO)
+                    {
+                        check = true;
+                        check_poliz = true;
+                        polizFindPerson.Add(Polizavis.Alco_Narco_Person[i]);
+                    }
                 }
             }
-
-            if (check_alco == true)
+            if (check == true)
             {
-                //Выводим инфу на экран 
-                ListOrder.ItemsSource = alcoFindPerson;
+                if (check_alco == true)
+                {
+                    //Выводим инфу на экран 
+                    ListOrder.ItemsSource = alcoFindPerson;
 
-            }
-            else if (check_narco == true)
-            {
-                ListOrder.ItemsSource = narcoFindPerson;
+                }
+                else if (check_narco == true)
+                {
+                    ListOrder.ItemsSource = narcoFindPerson;
 
+                }
+                else if (check_poliz == true)
+                {
+                    ListOrder.ItemsSource = polizFindPerson;
+                }
             }
-            else if (check_poliz == true)
-            {
-                ListOrder.ItemsSource = polizFindPerson;
-            }
-            else if (check_alco == false && check_narco == false && check_poliz == false)
+            else if (check == false)
             {
                 MessageBox.Show("ФИО не найдено");
             }
         }
-
-       
     }
 }

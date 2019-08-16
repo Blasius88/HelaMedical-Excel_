@@ -95,7 +95,7 @@ namespace HelaMedical
                 if (a <= 3) return;
                 else
                 {
-                    ReadPerson.Patient_Сreation_Person(fio, position, pass);
+                    ReadPerson.Patient_Сreation_Person(fio, pass, position);
                     Close();
                 }
             }

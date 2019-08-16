@@ -105,9 +105,8 @@ namespace HelaMedical
                     Person persons = new Person();
                     persons.Id = Convert.ToInt32(workSheet.Cells[cCnt, 1].Value);
                     persons.FIO = Convert.ToString(workSheet.Cells[cCnt, 2].Value);
-                    persons.Position = Convert.ToString(workSheet.Cells[cCnt, 4].Value);
                     persons.Pass = Convert.ToString(workSheet.Cells[cCnt, 3].Value);
-                  
+                    persons.Position = Convert.ToString(workSheet.Cells[cCnt, 4].Value);
 
                     Person.Persons.Add(persons);
                 }
