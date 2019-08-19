@@ -453,13 +453,16 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="File\AlcoDataBase.xlsx" />
+    <None Include="File\AlcoDataBaseByDate.xlsx" />
     <None Include="File\AlcoReport.xlsx" />
     <None Include="File\INC2.INI" />
     <None Include="File\INC3.INI" />
     <None Include="File\NarcoDataBase.xlsx" />
+    <None Include="File\NarcoDataBaseByDate.xlsx" />
     <None Include="File\NarcoReport.xlsx" />
     <None Include="File\Person.xlsx" />
     <None Include="File\PolizavisDataBase.xlsx" />
+    <None Include="File\PolizavisDataBaseByDate.xlsx" />
     <None Include="File\PolizavisReport.xlsx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -792,32 +795,32 @@
   <ItemGroup>
     <PublishFile Include="HelaMedical.pdb">
       <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
-      <PublishState>Include</PublishState>
-      <IncludeHash>True</IncludeHash>
       <FileType>File</FileType>
     </PublishFile>
     <PublishFile Include="OxyPlot.pdb">
       <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
-      <PublishState>Include</PublishState>
-      <IncludeHash>True</IncludeHash>
       <FileType>File</FileType>
     </PublishFile>
     <PublishFile Include="OxyPlot.Wpf.pdb">
       <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
-      <PublishState>Include</PublishState>
-      <IncludeHash>True</IncludeHash>
       <FileType>File</FileType>
     </PublishFile>
   </ItemGroup>
