@@ -2,6 +2,7 @@
 using System.Windows;
 using System.IO;
 using System.Windows.Media;
+using HelaMedical.Class;
 using static HelaMedical.Incitalization;
 using HelaMedical.Excep;
 using System.Data.Entity;
@@ -42,6 +43,7 @@ namespace HelaMedical
                 //проверяем пустое ли поле
                 if (fio == "")
                 {
+                    NewPersonalFIO.BorderThickness = new Thickness(3);
                     NewPersonalFIO.BorderBrush = Brushes.Red;
                     MessageBox.Show("Не ввели ФИО");
                     return;
@@ -50,6 +52,7 @@ namespace HelaMedical
                 string position = NewPersonalPosition.Text;
                 if (position == "")
                 {
+                    NewPersonalPosition.BorderThickness = new Thickness(3);
                     NewPersonalPosition.BorderBrush = Brushes.Red;
                     MessageBox.Show("Не ввели должность");
                     return;
@@ -58,6 +61,7 @@ namespace HelaMedical
                 string pass = NewPersonalPassword.Text;
                 if (pass == "")
                 {
+                    NewPersonalPassword.BorderThickness = new Thickness(3);
                     NewPersonalPassword.BorderBrush = Brushes.Red;
                     MessageBox.Show("Не ввели пароль");
                     return;
@@ -67,6 +71,7 @@ namespace HelaMedical
                 string pass1 = NewPersonalPassword1.Text;
                 if (pass == "")
                 {
+                    NewPersonalPassword1.BorderThickness = new Thickness(3);
                     NewPersonalPassword1.BorderBrush = Brushes.Red;
                     MessageBox.Show("Не ввели повторно пароль");
                     return;
@@ -74,18 +79,20 @@ namespace HelaMedical
                 else a++;
 
                 //Проверяем на наличие данного имени в базе 
-                for (int i = 0; i < Inci.Count; i++)
+                for (int i = 0; i < Person.Persons.Count; i++)
                 {
-                    if (fio == Inci[i].Name)
+                    if (fio == Person.Persons[i].FIO)
                     {
+                        NewPersonalFIO.BorderThickness = new Thickness(3);
                         NewPersonalFIO.BorderBrush = Brushes.Red;
-                        MessageBox.Show("Данное ФИО есть в базе");
+                        MessageBox.Show("Такой пользователь уже существует");
                         return;
                     }
                 }
                 if (NewPersonalPassword.Text != NewPersonalPassword1.Text)
                 {
-
+                    NewPersonalPassword.BorderThickness = new Thickness(3);
+                    NewPersonalPassword1.BorderThickness = new Thickness(3);
                     NewPersonalPassword.BorderBrush = Brushes.Red;
                     NewPersonalPassword1.BorderBrush = Brushes.Red;
                     MessageBox.Show("Пароли не совпадают");

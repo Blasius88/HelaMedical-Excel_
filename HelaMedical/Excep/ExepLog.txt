@@ -1,1 +1,7 @@
-﻿
+﻿0| System.Runtime.InteropServices.COMException (0x800A03EC): К сожалению, нам не удалось найти файл D:\HelaMedical\HelaMedical\File\Person.xlsx. Возможно, он был перемещен, переименован или удален?
+   в Microsoft.Office.Interop.Excel.Workbooks.Open(String Filename, Object UpdateLinks, Object ReadOnly, Object Format, Object Password, Object WriteResPassword, Object IgnoreReadOnlyRecommended, Object Origin, Object Delimiter, Object Editable, Object Notify, Object Converter, Object AddToMru, Object Local, Object CorruptLoad)
+   в HelaMedical.ReadPerson.Reader_Excel_Person() в D:\HelaMedical\HelaMedical\ReadPerson.cs:строка 100| 30.08.2019 0:18:08| 
+3| System.IndexOutOfRangeException: Индекс находился вне границ массива.
+   в HelaMedical.Generate_A_Report.DataGridFormat(String a, String b) в d:\HelaMedical\HelaMedical\Generate_A_Report.xaml.cs:строка 1563| 30.08.2019 20:44:11| admin
+5| System.IndexOutOfRangeException: Индекс находился вне границ массива.
+   в HelaMedical.Generate_A_Report.DataGridFormat(String a, String b) в d:\HelaMedical\HelaMedical\Generate_A_Report.xaml.cs:строка 1563| 30.08.2019 20:44:44| admin

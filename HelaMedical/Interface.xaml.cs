@@ -149,7 +149,7 @@ namespace HelaMedical
             }
             else if (check == false)
             {
-                MessageBox.Show("ФИО не найдено");
+                MessageBox.Show("Данный пациент не найдено");
             }
         }
     }
