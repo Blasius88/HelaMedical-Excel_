@@ -1396,5 +1396,230 @@ namespace HelaMedical
         {
             cecerskajaCentrBol = false;
         }
+
+        private void MinOblKlinCentrPSI_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MinOblKlinCentrPSI_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SoliCentrRainHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SoliCentrRainHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BorisCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BorisCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MolodechCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BerezinoCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BerezinoCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void VileiskaCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void VileiskaCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void VolozinCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void VolozinCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DerzinskiCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DerzinskiCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void KleckCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void KleckCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void KopilCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void KopilCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void LogoskCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void LogoskCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void LubanskCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void LubanskCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MjadelCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MjadelCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void NesvizkCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void NesvizkCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MarjanaGorkaCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MarjanaGorkaCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SluCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SluCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SmoleviciCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SmoleviciCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void StaradorozCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void StaradorozCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void StolbcCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void StolbcCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void UzdaCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void UzdaCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CervenCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CervenCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ZodinoCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ZodinoCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MinskOblTubHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MinskOblTubHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
