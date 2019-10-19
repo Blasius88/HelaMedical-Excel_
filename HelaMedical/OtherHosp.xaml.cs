@@ -1427,7 +1427,22 @@ namespace HelaMedical
 
         }
 
+        private void MolodechCentrRaionHosp_Cheked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private void MolodechCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void KrupskCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void KrupskCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
 
         }

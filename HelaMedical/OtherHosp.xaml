@@ -14,51 +14,51 @@
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="415*"/>
-                    <ColumnDefinition Width="70"/>
+                    <ColumnDefinition Width="50"/>
                     <ColumnDefinition Width="10"/>
                     <ColumnDefinition Width="415*"/>
-                    <ColumnDefinition Width="70"/>
+                    <ColumnDefinition Width="50"/>
                     <ColumnDefinition Width="10"/>
                     <ColumnDefinition Width="415*"/>
-                    <ColumnDefinition Width="70"/>
+                    <ColumnDefinition Width="50"/>
                     <ColumnDefinition Width="20"/>
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Column="0" Height="869" VerticalAlignment="Top">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="25*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
                         <RowDefinition Height="50*"/>
                         <RowDefinition Height="10"/>
                     </Grid.RowDefinitions>
@@ -276,40 +276,40 @@
                 </Grid>
                 <Grid Grid.Column="1">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="25*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
                         <RowDefinition Height="50*"/>
                         <RowDefinition Height="10"/>
                     </Grid.RowDefinitions>
@@ -440,41 +440,42 @@
                 </Grid>
                 <Grid Grid.Column="3">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="25*"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
                         <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="50*"/>
+                        <RowDefinition Height="70"/>
                         <RowDefinition Height="10"/>
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="0">
@@ -712,7 +713,7 @@
                                   Checked="CecerskajaCentrBol_Checked"
                                   Unchecked="CecerskajaCentrBol_UnChecked"/>
                     </Grid>
-                    <Grid Grid.Row="34">
+                    <Grid Grid.Row="35">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="50*"/>
                             <ColumnDefinition Width="50*"/>
@@ -734,41 +735,42 @@
                 </Grid>
                 <Grid Grid.Column="4">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="25*"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
                         <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="50*"/>
+                        <RowDefinition Height="50"/>
                         <RowDefinition Height="10"/>
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="1" Background="LightGray">
@@ -904,43 +906,35 @@
                                   Style="{StaticResource TextBoxFull}"/>
                     </Grid>
                 </Grid>
-                <Grid Grid.Column="5">
+                <Grid Grid.Column="6">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="25*"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
                         <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="50*"/>
+                        <RowDefinition Height="70"/>
                         <RowDefinition Height="10"/>
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="0">
@@ -1015,7 +1009,7 @@
                                   Content="УЗ «Копыльский центральная районная больница»"
                                   Style="{StaticResource CheckBoxLeft}"
                                   Checked="KopilCentrRaionHosp_Checked"
-                                  Unchecked="KopilCentrRaionHosp_Unchecked"/> 
+                                  Unchecked="KopilCentrRaionHosp_Unchecked"/>
                     </Grid>
                     <Grid Grid.Row="11" Background="LightGray">
                         <CheckBox Name="KrupskCentrRaionHosp"
@@ -1114,6 +1108,134 @@
                                   Style="{StaticResource CheckBoxLeft}"
                                   Checked="MinskOblTubHosp_Checked"
                                   Unchecked="MinskOblTubHosp_Unchecked"/>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Column="7">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="10"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="1" Background="LightGray">
+                        <TextBox Name="MinOblKlinCentrPSI_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <TextBox Name="SoliCentrRainHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="3" Background="LightGray">
+                        <TextBox Name="BorisCentrRaionHosp_col"
+                                 Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="4">
+                        <TextBox Name="MolodechCentrRaionHosp_col"
+                                 Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="5" Background="LightGray">
+                        <TextBox Name="BerezinoCentrRaionHosp_col"
+                                 Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="6">
+                        <TextBox Name="VileiskaCentrRaionHosp_col"
+                                 Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="7" Background="LightGray">
+                        <TextBox Name="VolozinCentrRaionHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="8" >
+                        <TextBox Name="DerzinskiCentrRaionHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="9" Background="LightGray">
+                        <TextBox Name="KleckCentrRaionHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="10">
+                        <TextBox Name="KopilCentrRaionHosp_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="11" Background="LightGray">
+                        <TextBox Name="KrupskCentrRaionHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="12">
+                        <TextBox Name="LogoskCentrRaionHosp_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="13" Background="LightGray">
+                        <TextBox Name="LubanskCentrRaionHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="14">
+                        <TextBox Name="MjadelCentrRaionHosp_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="15" Background="LightGray">
+                        <TextBox Name="NesvizkCentrRaionHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="16">
+                        <TextBox Name="MarjanaGorkaCentrRaionHosp_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="17" Background="LightGray">
+                        <TextBox Name="SluckCentrRaionHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="18">
+                        <TextBox Name="SmoleviciCentrRaionHosp_col" 
+                                 Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="19" Background="LightGray">
+                        <TextBox Name="StaradorozCentrRaionHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="20">
+                        <TextBox Name="StolbcCentrRaionHosp_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="21" Background="LightGray">
+                        <TextBox Name="UzdaCentrRaionHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="22">
+                        <TextBox Name="CervenCentrRaionHosp_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="23" Background="LightGray">
+                        <TextBox Name="ZodinoCentrRaionHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="24">
+                        <TextBox Name="MinskOblTubHosp_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
                     </Grid>
                 </Grid>
             </Grid>
