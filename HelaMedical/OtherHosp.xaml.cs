@@ -77,6 +77,58 @@ namespace HelaMedical
         private bool svetlagorCentrBol = false;
         private bool hoinikCentrBol = false;
         private bool cecerskajaCentrBol = false;
+
+        //Минская область 
+        //"УЗ «Минский областной клинический центр «Психиатрия-наркология»"
+        private bool minOblKlinCentrPSI = false;
+        //"УЗ «Солигорская центральная районная больница»"
+        private bool soliCentrRainHosp = false;
+        //"УЗ «Борисовская центральная районная больница»"
+        private bool borisCentrRaionHosp = false;
+        //"УЗ «Молодечненская центральная районная больница»"
+        private bool molodechCentrRaionHosp = false;
+        //"УЗ «Березинская центральная районная больница»"
+        private bool berezinoCentrRaionHosp = false;
+        //"УЗ «Вилейская центральная районная больница»"
+        private bool vileiskaCentrRaionHosp = false;
+        //"УЗ «Воложинская центральная районная больница»"
+        private bool volozinCentrRaionHosp = false;
+        // "УЗ «Дзержинская центральная районная больница»"
+        private bool derzinskiCentrRaionHosp = false;
+        //"УЗ «Клецкая центральная районная больница»"
+        private bool kleckCentrRaionHosp = false;
+        //"УЗ «Копыльский центральная районная больница»"
+        private bool kopilCentrRaionHosp = false;
+        //"УЗ «Крупская центральная районная больница»"
+        private bool krupskCentrRaionHosp = false;
+        //"УЗ «Логойская центральная районная больница»"
+        private bool logoskCentrRaionHosp = false;
+        //"УЗ «Любанская центральная районная больница»"
+        private bool lubanskCentrRaionHosp = false;
+        //"УЗ «Мядельская центральная районная больница»"
+        private bool mjadelCentrRaionHosp = false;
+        //"УЗ «Несвижская центральная районная больница»"
+        private bool nesvizkCentrRaionHosp = false;
+        //"УЗ «Марьиногорская центральная районная больница»"
+        private bool marjanaGorkaCentrRaionHosp = false;
+        //"УЗ «Слуцкая ЦРБ»"
+        private bool sluckCentrRaionHosp = false;
+        //"УЗ «Смолевичская центральная районная больница»"
+        private bool smoleviciCentrRaionHosp = false;
+        // "УЗ «Стародорожская центральная районная больница»"
+        private bool staradorozCentrRaionHosp = false;
+        //"УЗ «Столбцовская центральная районная больница»"
+        private bool stolbcCentrRaionHosp = false;
+        //"УЗ «Узденская центральная районная больница»"
+        private bool uzdaCentrRaionHosp = false;
+        //"УЗ «Червенская центральная районная больница»"
+        private bool cervenCentrRaionHosp = false;
+        // "УЗ «Жодинская ЦГБ»"
+        private bool zodinoCentrRaionHosp = false;
+        //"УЗ «Минский областной противотуберкулезный диспансер»"
+        private bool minskOblTubHosp = false;
+
+
         public string hospOtherName = "";
 
 
@@ -635,7 +687,7 @@ namespace HelaMedical
                     }
                     else hospOtherName += " " + ElskajaCentrBol_Col.Text + " раз. ";
                 }
-                if(zitkovsCentrBol == true)
+                if (zitkovsCentrBol == true)
                 {
                     hospOtherName = "УЗ «Житковичская центральная районная больница»";
                     if (ZitkovsCentrBol_Col.Text == "")
@@ -800,6 +852,272 @@ namespace HelaMedical
                     }
                     else hospOtherName += " " + CecerskajaCentrBol_Col.Text + " раз. ";
                 }
+                if (minOblKlinCentrPSI == true)
+                {
+                    hospOtherName = "УЗ «Минский областной клинический центр «Психиатрия-наркология»";
+                    if (MinOblKlinCentrPSI_col.Text == "")
+                    {
+                        check = false;
+                        MinOblKlinCentrPSI_col.BorderThickness = new Thickness(3);
+                        MinOblKlinCentrPSI_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + MinOblKlinCentrPSI_col.Text + " раз. ";
+
+                }
+                if (soliCentrRainHosp == true)
+                {
+                    hospOtherName += "УЗ «Солигорская центральная районная больница»";
+                    if (SoliCentrRainHosp_col.Text == "")
+                    {
+                        check = false;
+                        SoliCentrRainHosp_col.BorderThickness = new Thickness(3);
+                        SoliCentrRainHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + SoliCentrRainHosp_col.Text + " раз. ";
+                }
+                if (borisCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Борисовская центральная районная больница»";
+                    if (BorisCentrRaionHosp_col.Text == "")
+                    {
+                        check = false;
+                        BorisCentrRaionHosp_col.BorderThickness = new Thickness(3);
+                        BorisCentrRaionHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + BorisCentrRaionHosp_col.Text + " раз. ";
+                }
+                if (molodechCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Молодечненская центральная районная больница»";
+                    if (MolodechCentrRaionHosp_col.Text == "")
+                    {
+                        check = false;
+                        MolodechCentrRaionHosp_col.BorderThickness = new Thickness(3);
+                        MolodechCentrRaionHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + MolodechCentrRaionHosp_col.Text + " раз.";
+                }
+                if (berezinoCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Березинская центральная районная больница»";
+                    if (BerezCentrRaionHosp_Col.Text == "")
+                    {
+                        check = false;
+                        BerezCentrRaionHosp_Col.BorderThickness = new Thickness(3);
+                        BerezCentrRaionHosp_Col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + BerezCentrRaionHosp_Col.Text + " раз. ";
+                }
+                if (vileiskaCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Вилейская центральная районная больница»";
+                    if (VileiskaCentrRaionHosp_col.Text == "")
+                    {
+                        check = false;
+                        VileiskaCentrRaionHosp_col.BorderThickness = new Thickness(3);
+                        VileiskaCentrRaionHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + VileiskaCentrRaionHosp_col.Text + " раз. ";
+                }
+                if (volozinCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Воложинская центральная районная больница»";
+                    if (VolozinCentrRaionHosp_col.Text == "")
+                    {
+                        check = false;
+                        VolozinCentrRaionHosp_col.BorderThickness = new Thickness(3);
+                        VolozinCentrRaionHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + VolozinCentrRaionHosp_col.Text + " раз.";
+                }
+                if (derzinskiCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Дзержинская центральная районная больница»";
+                    if (DerzinskiCentrRaionHosp_col.Text == "")
+                    {
+                        check = false;
+                        DerzinskiCentrRaionHosp_col.BorderThickness = new Thickness(3);
+                        DerzinskiCentrRaionHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + DerzinskiCentrRaionHosp_col.Text + " раз. ";
+                }
+                if (kleckCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Клецкая центральная районная больница»";
+                    if (KleckCentrRaionHosp_col.Text == "")
+                    {
+                        check = false;
+                        KleckCentrRaionHosp_col.BorderThickness = new Thickness(3);
+                        KleckCentrRaionHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + KleckCentrRaionHosp_col.Text + " раз. ";
+                }
+                if (kopilCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Копыльский центральная районная больница»";
+                    if (KopilCentrRaionHosp_col.Text == "")
+                    {
+                        check = false;
+                        KopilCentrRaionHosp_col.BorderThickness = new Thickness(3);
+                        KopilCentrRaionHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + KopilCentrRaionHosp_col.Text + " раз. ";
+                }
+                if (krupskCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Крупская центральная районная больница»";
+                    if (KrupskCentrRaionHosp_col.Text == "")
+                    {
+                        check = false;
+                        KrupskCentrRaionHosp_col.BorderThickness = new Thickness(3);
+                        KrupskCentrRaionHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + KrupskCentrRaionHosp_col.Text + " раз. ";
+                }
+                if (logoskCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Логойская центральная районная больница»";
+                    if (LogoskCentrRaionHosp_col.Text == "")
+                    {
+                        check = false;
+                        LogoskCentrRaionHosp_col.BorderThickness = new Thickness(3);
+                        LogoskCentrRaionHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + LogoskCentrRaionHosp_col.Text + " раз. ";
+                }
+                if (lubanskCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Любанская центральная районная больница»";
+                    if (LubanskCentrRaionHosp_col.Text == "")
+                    {
+                        check = false;
+                        LubanskCentrRaionHosp_col.BorderThickness = new Thickness(3);
+                        LubanskCentrRaionHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + LubanskCentrRaionHosp_col.Text + " раз. ";
+                }
+                if (mjadelCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Мядельская центральная районная больница»";
+                    if (MjadelCentrRaionHosp_col.Text == "")
+                    {
+                        check = false;
+                        MjadelCentrRaionHosp_col.BorderThickness = new Thickness(3);
+                        MjadelCentrRaionHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + MjadelCentrRaionHosp_col.Text + " раз. ";
+                }
+                if (nesvizkCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Несвижская центральная районная больница»";
+                    if (NesvizkCentrRaionHosp_col.Text == "")
+                    {
+                        check = false;
+                        NesvizkCentrRaionHosp_col.BorderThickness = new Thickness(3);
+                        NesvizkCentrRaionHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + NesvizkCentrRaionHosp_col.Text + " раз. ";
+                }
+                if (marjanaGorkaCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Марьиногорская центральная районная больница»";
+                    if (MarjanaGorkaCentrRaionHosp_col.Text == "")
+                    {
+                        check = false;
+                        MarjanaGorkaCentrRaionHosp_col.BorderThickness = new Thickness(3);
+                        MarjanaGorkaCentrRaionHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + MarjanaGorkaCentrRaionHosp_col.Text + " раз. ";
+                }
+                if (sluckCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Слуцкая ЦРБ»";
+                    if (SluckCentrRaionHosp_col.Text == "")
+                    {
+                        check = false;
+                        SluckCentrRaionHosp_col.BorderThickness = new Thickness(3);
+                        SluckCentrRaionHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + SluckCentrRaionHosp_col.Text + " раз. ";
+                }
+                if (smoleviciCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Смолевичская центральная районная больница»";
+                    if (SmoleviciCentrRaionHosp_col.Text == "")
+                    {
+                        check = false;
+                        SmoleviciCentrRaionHosp_col.BorderThickness = new Thickness(3);
+                        SmoleviciCentrRaionHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + SmoleviciCentrRaionHosp_col.Text + " раз. ";
+                }
+                if (staradorozCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Стародорожская центральная районная больница»";
+                    if (StaradorozCentrRaionHosp_col.Text == "")
+                    {
+                        check = false;
+                        StaradorozCentrRaionHosp_col.BorderThickness = new Thickness(3);
+                        StaradorozCentrRaionHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + StaradorozCentrRaionHosp_col.Text + " раз. ";
+                }
+                if (stolbcCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Столбцовская центральная районная больница»";
+                    if (StolbcCentrRaionHosp_col.Text == "")
+                    {
+                        check = false;
+                        StolbcCentrRaionHosp_col.BorderThickness = new Thickness(3);
+                        StolbcCentrRaionHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + StolbcCentrRaionHosp_col.Text + " раз. ";
+                }
+                if (uzdaCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Узденская центральная районная больница»";
+                    if (UzdaCentrRaionHosp_col.Text == "")
+                    {
+                        check = false;
+                        UzdaCentrRaionHosp_col.BorderThickness = new Thickness(3);
+                        UzdaCentrRaionHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + UzdaCentrRaionHosp_col.Text + " раз. ";
+                }
+                if (cervenCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Червенская центральная районная больница»";
+                    if (CervenCentrRaionHosp_col.Text == "")
+                    {
+                        check = false;
+                        CervenCentrRaionHosp_col.BorderThickness = new Thickness(3);
+                        CervenCentrRaionHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + CervenCentrRaionHosp_col.Text + " раз. ";
+                }
+                if (zodinoCentrRaionHosp == true)
+                {
+                    hospOtherName += "УЗ «Жодинская ЦГБ»";
+                    if (ZodinoCentrRaionHosp_col.Text == "")
+                    {
+                        check = false;
+                        ZodinoCentrRaionHosp_col.BorderThickness = new Thickness(3);
+                        ZodinoCentrRaionHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + ZodinoCentrRaionHosp_col.Text + " раз. ";
+                }
+                if (minskOblTubHosp == true)
+                {
+                    hospOtherName += "УЗ «Минский областной противотуберкулезный диспансер»";
+                    if (MinskOblTubHosp_col.Text == "")
+                    {
+                        check = false;
+                        MinskOblTubHosp_col.BorderThickness = new Thickness(3);
+                        MinskOblTubHosp_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + MinskOblTubHosp_col.Text + " раз. ";
+                }
+
                 string otherHosTextBox = OtherHospTextBox.Text;
                 if (otherHosTextBox != "")
                 {
@@ -1399,242 +1717,242 @@ namespace HelaMedical
 
         private void MinOblKlinCentrPSI_Checked(object sender, RoutedEventArgs e)
         {
-
+            minOblKlinCentrPSI = true;
         }
 
         private void MinOblKlinCentrPSI_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            minOblKlinCentrPSI = false;
         }
 
         private void SoliCentrRainHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            soliCentrRainHosp = true;
         }
 
         private void SoliCentrRainHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            soliCentrRainHosp = false;
         }
 
         private void BorisCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            borisCentrRaionHosp = true;
         }
 
         private void BorisCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            borisCentrRaionHosp = false;
         }
 
         private void MolodechCentrRaionHosp_Cheked(object sender, RoutedEventArgs e)
         {
-
+            molodechCentrRaionHosp = true;
         }
 
         private void MolodechCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            molodechCentrRaionHosp = false;
         }
 
         private void KrupskCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            krupskCentrRaionHosp = true;
         }
 
         private void KrupskCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            krupskCentrRaionHosp = false;
         }
 
         private void BerezinoCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            berezCentrRaionHosp = false;
         }
 
         private void BerezinoCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            berezCentrRaionHosp = true;
         }
 
         private void VileiskaCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            vileiskaCentrRaionHosp = true;
         }
 
         private void VileiskaCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            vileiskaCentrRaionHosp = false;
         }
 
         private void VolozinCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            volozinCentrRaionHosp = true;
         }
 
         private void VolozinCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            volozinCentrRaionHosp = false;
         }
 
         private void DerzinskiCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            derzinskiCentrRaionHosp = true;
         }
 
         private void DerzinskiCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            derzinskiCentrRaionHosp = false;
         }
 
         private void KleckCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            kleckCentrRaionHosp = true;
         }
 
         private void KleckCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            kleckCentrRaionHosp = false;
         }
 
         private void KopilCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            kopilCentrRaionHosp = true;
         }
 
         private void KopilCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            kopilCentrRaionHosp = false;
         }
 
         private void LogoskCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            logoskCentrRaionHosp = true;
         }
 
         private void LogoskCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            logoskCentrRaionHosp = false;
         }
 
         private void LubanskCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            lubanskCentrRaionHosp = true;
         }
 
         private void LubanskCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            lubanskCentrRaionHosp = false;
         }
 
         private void MjadelCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            mjadelCentrRaionHosp = true;
         }
 
         private void MjadelCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            mjadelCentrRaionHosp = false;
         }
 
         private void NesvizkCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            nesvizkCentrRaionHosp = true;
         }
 
         private void NesvizkCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            nesvizkCentrRaionHosp = false;
         }
 
         private void MarjanaGorkaCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            marjanaGorkaCentrRaionHosp = true;
         }
 
         private void MarjanaGorkaCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            marjanaGorkaCentrRaionHosp = false;
         }
 
         private void SluCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            sluckCentrRaionHosp = true;
         }
 
         private void SluCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            sluckCentrRaionHosp = false;
         }
 
         private void SmoleviciCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            smoleviciCentrRaionHosp = true;
         }
 
         private void SmoleviciCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            smoleviciCentrRaionHosp = false;
         }
 
         private void StaradorozCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            staradorozCentrRaionHosp = true;
         }
 
         private void StaradorozCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            staradorozCentrRaionHosp = false;
         }
 
         private void StolbcCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            stolbcCentrRaionHosp = true;
         }
 
         private void StolbcCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            stolbcCentrRaionHosp = false;
         }
 
         private void UzdaCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            uzdaCentrRaionHosp = true;
         }
 
         private void UzdaCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            uzdaCentrRaionHosp = false;
         }
 
         private void CervenCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            cervenCentrRaionHosp = true;
         }
 
         private void CervenCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            cervenCentrRaionHosp = false;
         }
 
         private void ZodinoCentrRaionHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            zodinoCentrRaionHosp = true;
         }
 
         private void ZodinoCentrRaionHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            zodinoCentrRaionHosp = false;
         }
 
         private void MinskOblTubHosp_Checked(object sender, RoutedEventArgs e)
         {
-
+            minskOblTubHosp = true;
         }
 
         private void MinskOblTubHosp_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            minskOblTubHosp = false;
         }
     }
 }

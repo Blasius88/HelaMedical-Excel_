@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HelaMedical"
         mc:Ignorable="d"
-        Title="Другие больницы" Height="1080" Width="1900">
+        Title="Другие больницы" Height="1080" Width="1900" WindowState="Maximized">
     <Grid>
         <ScrollViewer Name="scroll" 
                       CanContentScroll="True"
@@ -713,24 +713,7 @@
                                   Checked="CecerskajaCentrBol_Checked"
                                   Unchecked="CecerskajaCentrBol_UnChecked"/>
                     </Grid>
-                    <Grid Grid.Row="35">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="50*"/>
-                            <ColumnDefinition Width="50*"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid Grid.Column="0">
-                            <Button Name ="AddOtherHosp"
-                            Style="{StaticResource Button}"
-                            Content="Выбрать"
-                            Click="AddOtherHosp_Click"/>
-                        </Grid>
-                        <Grid Grid.Column="1">
-                            <Button Name ="CloseOtherHosp"
-                            Style="{StaticResource Button}"
-                            Content="Отмена"
-                            Click="CloseOtherHosp_Click"/>
-                        </Grid>
-                    </Grid>
+                    
 
                 </Grid>
                 <Grid Grid.Column="4">
@@ -1108,6 +1091,24 @@
                                   Style="{StaticResource CheckBoxLeft}"
                                   Checked="MinskOblTubHosp_Checked"
                                   Unchecked="MinskOblTubHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="26">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="50*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Button Name ="AddOtherHosp"
+                            Style="{StaticResource Button}"
+                            Content="Выбрать"
+                            Click="AddOtherHosp_Click"/>
+                        </Grid>
+                        <Grid Grid.Column="1">
+                            <Button Name ="CloseOtherHosp"
+                            Style="{StaticResource Button}"
+                            Content="Отмена"
+                            Click="CloseOtherHosp_Click"/>
+                        </Grid>
                     </Grid>
                 </Grid>
                 <Grid Grid.Column="7">
