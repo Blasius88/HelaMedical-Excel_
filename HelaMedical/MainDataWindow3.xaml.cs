@@ -576,134 +576,134 @@ namespace HelaMedical
 
                 //Наркодиагноз
                 string f101 = "";
-                if (f101I == true) f101 += "f101I";
-                else if (f101II == true) f101 += "f101II";
-                else if (f101III == true) f101 += "f101III";
+                if (f101I == true) f101 += "F101I";
+                else if (f101II == true) f101 += "F101II";
+                else if (f101III == true) f101 += "F101III";
 
                 string f1020 = "";
-                if (f1020I == true) f1020 += "f1020I";
-                else if (f1020II == true) f1020 += "f1020II";
-                else if (f1020III == true) f1020 += "f1020III";
+                if (f1020I == true) f1020 += "F1020I";
+                else if (f1020II == true) f1020 += "F1020II";
+                else if (f1020III == true) f1020 += "F1020III";
 
                 string f1021 = "";
-                if (f1021I == true) f1021 += "f1021I";
-                else if (f1021II == true) f1021 += "f1021II";
-                else if (f1021III == true) f1021 += "f1021III";
+                if (f1021I == true) f1021 += "F1021I";
+                else if (f1021II == true) f1021 += "F1021II";
+                else if (f1021III == true) f1021 += "F1021III";
 
                 string f1022 = "";
-                if (f1022I == true) f1022 += "f1022I";
-                else if (f1022II == true) f1022 += "f1022II";
-                else if (f1022III == true) f1022 += "f1022III";
+                if (f1022I == true) f1022 += "F1022I";
+                else if (f1022II == true) f1022 += "F1022II";
+                else if (f1022III == true) f1022 += "F1022III";
 
                 string f1023 = "";
-                if (f1023I == true) f1023 += "f1023I";
-                else if (f1023II == true) f1023 += "f1023II";
-                else if (f1023III == true) f1023 += "f1023III";
+                if (f1023I == true) f1023 += "F1023I";
+                else if (f1023II == true) f1023 += "F1023II";
+                else if (f1023III == true) f1023 += "F1023III";
 
                 string f1024 = "";
-                if (f1024I == true) f1024 += "f1024I";
-                else if (f1024II == true) f1024 += "f1024II";
-                else if (f1024III == true) f1024 += "f1024III";
+                if (f1024I == true) f1024 += "F1024I";
+                else if (f1024II == true) f1024 += "F1024II";
+                else if (f1024III == true) f1024 += "F1024III";
 
                 string f1025 = "";
-                if (f1025I == true) f1025 += "f1025I";
-                else if (f1025II == true) f1025 += "f1025II";
-                else if (f1025III == true) f1025 += "f1025III";
+                if (f1025I == true) f1025 += "F1025I";
+                else if (f1025II == true) f1025 += "F1025II";
+                else if (f1025III == true) f1025 += "F1025III";
 
                 string f1026 = "";
-                if (f1026I == true) f1026 += "f1026I";
-                else if (f1026II == true) f1026 += "f1026II";
-                else if (f1026III == true) f1026 += "f1026III";
+                if (f1026I == true) f1026 += "F1026I";
+                else if (f1026II == true) f1026 += "F1026II";
+                else if (f1026III == true) f1026 += "F1026III";
 
                 string f1031 = "";
-                if (f1031I == true) f1031 += "f1031I";
-                else if (f1031II == true) f1031 += "f1031II";
-                else if (f1031III == true) f1031 += "f1031III";
+                if (f1031I == true) f1031 += "F1031I";
+                else if (f1031II == true) f1031 += "F1031II";
+                else if (f1031III == true) f1031 += "F1031III";
 
                 string f1040 = "";
-                if (f1040I == true) f1040 += "f1040I";
-                else if (f1040II == true) f1040 += "f1040II";
-                else if (f1040III == true) f1040 += "f1040III";
+                if (f1040I == true) f1040 += "F1040I";
+                else if (f1040II == true) f1040 += "F1040II";
+                else if (f1040III == true) f1040 += "F1040III";
 
                 string f1041 = "";
-                if (f1041I == true) f1041 += "f1041I";
-                else if (f1041II == true) f1041 += "f1041II";
-                else if (f1041III == true) f1041 += "f1041III";
+                if (f1041I == true) f1041 += "F1041I";
+                else if (f1041II == true) f1041 += "F1041II";
+                else if (f1041III == true) f1041 += "F1041III";
 
                 string f1045 = "";
-                if (f1045I == true) f1045 += "f1045I";
-                else if (f1045II == true) f1045 += "f1045II";
-                else if (f1045III == true) f1045 += "f1045III";
+                if (f1045I == true) f1045 += "F1045I";
+                else if (f1045II == true) f1045 += "F1045II";
+                else if (f1045III == true) f1045 += "F1045III";
 
                 string f105 = "";
-                if (f105I == true) f105 += "f105I";
-                else if (f105II == true) f105 += "f105II";
-                else if (f105III == true) f105 += "f105III";
+                if (f105I == true) f105 += "F105I";
+                else if (f105II == true) f105 += "F105II";
+                else if (f105III == true) f105 += "F105III";
 
                 string f1050 = "";
-                if (f1050I == true) f1050 += "f1050I";
-                else if (f1050II == true) f1050 += "f1050II";
-                else if (f1050III == true) f1050 += "f1050III";
+                if (f1050I == true) f1050 += "F1050I";
+                else if (f1050II == true) f1050 += "F1050II";
+                else if (f1050III == true) f1050 += "F1050III";
 
                 string f1051 = "";
-                if (f1051I == true) f1051 += "f1051I";
-                else if (f1051II == true) f1051 += "f1051II";
-                else if (f1051III == true) f1051 += "f1051III";
+                if (f1051I == true) f1051 += "F1051I";
+                else if (f1051II == true) f1051 += "F1051II";
+                else if (f1051III == true) f1051 += "F1051III";
 
                 string f1052 = "";
-                if (f1052I == true) f1052 += "f1052I";
-                else if (f1052II == true) f1052 += "f1052II";
-                else if (f1052III == true) f1052 += "f1052III";
+                if (f1052I == true) f1052 += "F1052I";
+                else if (f1052II == true) f1052 += "F1052II";
+                else if (f1052III == true) f1052 += "F1052III";
 
                 string f1053 = "";
-                if (f1053I == true) f1053 += "f1053I";
-                else if (f1053II == true) f1053 += "f1053II";
-                else if (f1053III == true) f1053 += "f1053III";
+                if (f1053I == true) f1053 += "F1053I";
+                else if (f1053II == true) f1053 += "F1053II";
+                else if (f1053III == true) f1053 += "F1053III";
 
                 string f1054 = "";
-                if (f1054I == true) f1054 += "f1054I";
-                else if (f1054II == true) f1054 += "f1054II";
-                else if (f1054III == true) f1054 += "f1054III";
+                if (f1054I == true) f1054 += "F1054I";
+                else if (f1054II == true) f1054 += "F1054II";
+                else if (f1054III == true) f1054 += "F1054III";
 
                 string f1055 = "";
-                if (f1055I == true) f1055 += "f1055I";
-                else if (f1055II == true) f1055 += "f1055II";
-                else if (f1055III == true) f1055 += "f1055III";
+                if (f1055I == true) f1055 += "F1055I";
+                else if (f1055II == true) f1055 += "F1055II";
+                else if (f1055III == true) f1055 += "F1055III";
 
                 string f1056 = "";
-                if (f1056I == true) f1056 += "f1056I";
-                else if (f1056II == true) f1056 += "f1056II";
-                else if (f1056III == true) f1056 += "f1056III";
+                if (f1056I == true) f1056 += "F1056I";
+                else if (f1056II == true) f1056 += "F1056II";
+                else if (f1056III == true) f1056 += "F1056III";
 
                 string f106 = "";
-                if (f106I == true) f106 += "f106I";
-                else if (f106II == true) f106 += "f106II";
-                else if (f106III == true) f106 += "f106III";
+                if (f106I == true) f106 += "F106I";
+                else if (f106II == true) f106 += "F106II";
+                else if (f106III == true) f106 += "F106III";
 
                 string f1071 = "";
-                if (f1071I == true) f1071 += "f1071I";
-                else if (f1071II == true) f1071 += "f1071II";
-                else if (f1071III == true) f1071 += "f1071III";
+                if (f1071I == true) f1071 += "F1071I";
+                else if (f1071II == true) f1071 += "F1071II";
+                else if (f1071III == true) f1071 += "F1071III";
 
                 string f1073 = "";
-                if (f1073I == true) f1073 += "f1073I";
-                else if (f1073II == true) f1073 += "f1073II";
-                else if (f1073III == true) f1073 += "f1073III";
+                if (f1073I == true) f1073 += "F1073I";
+                else if (f1073II == true) f1073 += "F1073II";
+                else if (f1073III == true) f1073 += "F1073III";
 
                 string f109 = "";
-                if (f109I == true) f109 += "f109I";
-                else if (f109II == true) f109 += "f109II";
-                else if (f109III == true) f109 += "f109III";
+                if (f109I == true) f109 += "F109I";
+                else if (f109II == true) f109 += "F109II";
+                else if (f109III == true) f109 += "F109III";
 
                 string f1003 = "";
-                if (f1003I == true) f1003 += "f1003I";
-                else if (f1003II == true) f1003 += "f1003II";
-                else if (f1003III == true) f1003 += "f1003III";
+                if (f1003I == true) f1003 += "F1003I";
+                else if (f1003II == true) f1003 += "F1003II";
+                else if (f1003III == true) f1003 += "F1003III";
 
                 string f1006 = "";
-                if (f1006I == true) f1006 += "f1006I";
-                else if (f1006II == true) f1006 += "f1006II";
-                else if (f1006III == true) f1006 += "f1006III";
+                if (f1006I == true) f1006 += "F1006I";
+                else if (f1006II == true) f1006 += "F1006II";
+                else if (f1006III == true) f1006 += "F1006III";
 
                 string DrugDiagnosisAlc = "";
                 if (f101 != "") DrugDiagnosisAlc += f101 + ", ";
@@ -1064,7 +1064,7 @@ namespace HelaMedical
                 }
                 else
                 {
-                    MessageBox.Show("Не все данные введены");
+                    MessageBox.Show("Не все обязательные поля заполнены");
                     return;
                 }
                 

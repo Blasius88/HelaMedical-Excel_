@@ -779,7 +779,7 @@ namespace HelaMedical
                 }
                 else
                 {
-                    MessageBox.Show("Не все данные введены");
+                    MessageBox.Show("Не все обязательные поля заполнены");
                     return;
                 }
         }
