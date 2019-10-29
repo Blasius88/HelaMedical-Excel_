@@ -143,6 +143,7 @@
                             <TextBlock Text ="Проживал с родителями"/>
                             <TextBlock Text ="Проживал с одним родителем"/>
                             <TextBlock Text ="Другое"/>
+                            <TextBlock Text="Не уточнено" />
                         </ComboBox>
                     </Grid>
                     <Grid Grid.Row="9">

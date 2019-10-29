@@ -128,6 +128,61 @@ namespace HelaMedical
         //"УЗ «Минский областной противотуберкулезный диспансер»"
         private bool minskOblTubHosp = false;
 
+        // Витебская область 
+        //Полоцкая ОПБ
+        private bool polockOPB = false;
+        //Бешенковичкая ЦРБ
+        private bool beschenkoviciCRB = false;
+        //Брасловская ЦРБ
+        private bool braslowCRB = false;
+        //Верхнедвинская ЦПБ
+        private bool verhnedviskCPB = false;
+        //Городокская ЦРБ
+        private bool gorodokskajaCRB = false;
+        //Докшицкая ЦРБ
+        private bool doksicrajaCRB = false;
+        //Дубровенская ЦРБ
+        private bool dubrovenskaja = false;
+        //Лепельская ЦРБ
+        private bool lepelskaja = false;
+        //Лиозненская ЦРБ
+        private bool lioznenskaja = false;
+        //Миорская ЦРБ
+        private bool miorskaja = false;
+        //Новолукомльская ЦРБ
+        private bool novoluomlsk = false;
+        //Оршанская ЦП
+        private bool orscha = false;
+        //Поставская ЦРБ
+        private bool postav = false;
+        //Россонская ЦРБ
+        private bool rossonsk = false;
+        //Сенненская ЦРБ
+        private bool sennen = false;
+        //Толочинская ЦРБ
+        private bool tolochin = false;
+        //Ушачская ЦРБ
+        private bool uschachi = false;
+        //Шарковщинская ЦРБ
+        private bool scharkovthinsk = false;
+        //Шумилинская ЦРБ
+        private bool schumilinsk = false;
+        //Новополоцкая ЦРБ
+        private bool novopolock = false;
+        //Витебская БСМП
+        private bool vitebskBSMP = false;
+        //ВОКЦ псих. нарк.
+        private bool vOKC = false;
+        //Браславская ОПБ
+        private bool braslovOPB = false;
+        //Витебский ОКЦ
+        private bool vitebskOCK = false;
+        //Витебская токсикология
+        private bool vitebskToksik = false;
+        //Лепельская ОПБ
+        private bool lepelskaOPB = false;
+        //РКПБ/РНПЦ
+        private bool rKPB_PNPC = false;
 
         public string hospOtherName = "";
 
@@ -1117,6 +1172,299 @@ namespace HelaMedical
                     }
                     else hospOtherName += " " + MinskOblTubHosp_col.Text + " раз. ";
                 }
+                if (polockOPB == true)
+                {
+                    hospOtherName += PolockOPB.Content.ToString();
+                    if (PolockOPB_col.Text == "")
+                    {
+                        check = false;
+                        PolockOPB_col.BorderThickness = new Thickness(3);
+                        PolockOPB_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + PolockOPB_col.Text + " раз.";
+                }
+                if (beschenkoviciCRB == true)
+                {
+                    hospOtherName += BeschenkoviciCRB.Content.ToString();
+                    if (BeschenkoviciCRB_col.Text == "")
+                    {
+                        check = false;
+                        BeschenkoviciCRB_col.BorderThickness = new Thickness(3);
+                        BeschenkoviciCRB_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + BeschenkoviciCRB_col.Text + " раз.";
+                }
+                if (braslowCRB == true)
+                {
+                    hospOtherName += BraslowCRB.Content.ToString();
+                    if (BraslowCRB_col.Text == "")
+                    {
+                        check = false;
+                        BraslowCRB_col.BorderThickness = new Thickness(3);
+                        BraslowCRB_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + BraslowCRB_col.Text + " раз.";
+                }
+                if (verhnedviskCPB == true)
+                {
+                    hospOtherName += VerhnedviskCPB.Content.ToString();
+                    if (VerhnedviskCPB_col.Text == "")
+                    {
+                        check = false;
+                        VerhnedviskCPB_col.BorderThickness = new Thickness(3);
+                        VerhnedviskCPB_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + VerhnedviskCPB_col.Text + " раз."; 
+                }
+                if (gorodokskajaCRB == true)
+                {
+                    hospOtherName += GorodokskajaCRB.Content.ToString();
+                    if (GorodokskajaCRB_col.Text == "")
+                    {
+                        check = false;
+                        GorodokskajaCRB_col.BorderThickness = new Thickness(3);
+                        GorodokskajaCRB_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + GorodokskajaCRB_col.Text + " раз.";
+                }
+                if (doksicrajaCRB == true)
+                {
+                    hospOtherName += DoksicrajaCRB.Content.ToString();
+                    if (DoksicrajaCRB_col.Text == "")
+                    {
+                        check = false;
+                        DoksicrajaCRB_col.BorderThickness = new Thickness(3);
+                        DoksicrajaCRB_col.BorderBrush = Brushes.Red;
+                    }
+                }
+                if (dubrovenskaja == true)
+                {
+                    hospOtherName += Dubrovenskaja.Content.ToString();
+                    if (Dubrovenskaja_col.Text == "")
+                    {
+                        check = false;
+                        Dubrovenskaja_col.BorderThickness = new Thickness(3);
+                        Dubrovenskaja_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + Dubrovenskaja_col.Text + " раз. ";
+                }
+                if (lepelskaja == true)
+                {
+                    hospOtherName += Lepelskaja.Content.ToString();
+                    if (Lepelskaja_col.Text == "")
+                    {
+                        check = false;
+                        Lepelskaja_col.BorderThickness = new Thickness(3);
+                        Lepelskaja_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + Lepelskaja_col.Text + "раз. ";
+                }
+                if (lioznenskaja == true)
+                {
+                    hospOtherName += Lioznenskaja.Content.ToString();
+                    if (Lioznenskaja_col.Text == "")
+                    {
+                        check = false;
+                        Lioznenskaja_col.BorderThickness = new Thickness(3);
+                        Lioznenskaja_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + Lioznenskaja_col.Text + " раз. ";
+                }
+                if (miorskaja == true)
+                {
+                    hospOtherName += Miorskaja.Content.ToString();
+                    if (Miorskaja_col.Text == "")
+                    {
+                        check = false;
+                        Miorskaja_col.BorderThickness = new Thickness(3);
+                        Miorskaja_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + Miorskaja_col.Text + " раз. ";
+                }
+                if (novoluomlsk == true)
+                {
+                    hospOtherName += Novoluomlsk.Content.ToString();
+                    if (Novoluomlsk_col.Text == "")
+                    {
+                        check = false;
+                        Novoluomlsk_col.BorderThickness = new Thickness(3);
+                        Novoluomlsk_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + Novoluomlsk_col.Text + " раз.";
+                }
+                if (orscha == true)
+                {
+                    hospOtherName += Orscha.Content.ToString();
+                    if (Orscha_col.Text == "")
+                    {
+                        check = false;
+                        Orscha_col.BorderThickness = new Thickness(3);
+                        Orscha_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + Orscha_col.Text + " раз. ";
+                }
+                if (postav == true)
+                {
+                    hospOtherName += Postav.Content.ToString();
+                    if (Postav_col.Text == "")
+                    {
+                        check = false;
+                        Postav_col.BorderThickness = new Thickness(3);
+                        Postav_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + Postav_col.Text + " раз. ";
+                }
+                if (rossonsk == true)
+                {
+                    hospOtherName += Rossonsk.Content.ToString();
+                    if (Rossonsk_col.Text == "")
+                    {
+                        check = false;
+                        Rossonsk_col.BorderThickness = new Thickness(3);
+                        Rossonsk_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + Rossonsk_col.Text + " раз. ";
+                }
+                if (sennen == true)
+                {
+                    hospOtherName += Sennen.Content.ToString();
+                    if (Sennen_col.Text == "")
+                    {
+                        check = false;
+                        Sennen_col.BorderThickness = new Thickness(3);
+                        Sennen_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + Sennen_col.Text + " раз. ";
+                }
+                if (tolochin == true)
+                {
+                    hospOtherName += Tolochin.Content.ToString();
+                    if (Tolochin_col.Text == "")
+                    {
+                        check = false;
+                        Tolochin_col.BorderThickness = new Thickness(3);
+                        Tolochin_col.BorderBrush = Brushes.Red;
+                    }
+                }
+                if (uschachi == true)
+                {
+                    hospOtherName += Uschachi.Content.ToString();
+                    if (Uschachi_col.Text == "")
+                    {
+                        check = false;
+                        Uschachi_col.BorderThickness = new Thickness(3);
+                        Uschachi_col.BorderBrush = Brushes.Red;
+                    }
+                }
+                if (scharkovthinsk == true)
+                {
+                    hospOtherName += Scharkovthinsk.Content.ToString();
+                    if (Scharkovthinsk_col.Text == "")
+                    {
+                        check = false;
+                        Scharkovthinsk_col.BorderThickness = new Thickness(3);
+                        Scharkovthinsk_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + Scharkovthinsk_col.Text + " раз. ";
+                }
+                if (schumilinsk == true)
+                {
+                    hospOtherName += Schumilinsk.Content.ToString();
+                    if (Schumilinsk_col.Text == "")
+                    {
+                        check = false;
+                        Schumilinsk_col.BorderThickness = new Thickness(3);
+                        Schumilinsk_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + Schumilinsk_col.Text + " раз.";
+                }
+                if (novopolock == true)
+                {
+                    hospOtherName += Novopolock.Content.ToString();
+                    if (Novopolock_col.Text == "")
+                    {
+                        check = false;
+                        Novopolock_col.BorderThickness = new Thickness(3);
+                        Novopolock_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + Novopolock_col.Text + " раз."; 
+                }
+                if (vitebskBSMP == true)
+                {
+                    hospOtherName += VitebskBSMP.Content.ToString();
+                    if (VitebskBSMP_col.Text == "")
+                    {
+                        check = false;
+                        VitebskBSMP_col.BorderThickness = new Thickness(3);
+                        VitebskBSMP_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + VitebskBSMP_col.Text + " раз. ";
+                }
+                if (vOKC == true)
+                {
+                    hospOtherName += VOKC.Content.ToString();
+                    if (VOKC_col.Text == "")
+                    {
+                        check = false;
+                        VOKC_col.BorderThickness = new Thickness(3);
+                        VOKC_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + VOKC_col.Text + " раз. ";
+                }
+                if (braslovOPB == true)
+                {
+                    hospOtherName += BraslovOPB.Content.ToString();
+                    if (BraslovOPB_col.Text == "")
+                    {
+                        check = false;
+                        BraslovOPB_col.BorderThickness = new Thickness(3);
+                        BraslovOPB_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + BraslovOPB_col.Text + " раз. ";
+                }
+                if (vitebskOCK == true)
+                {
+                    hospOtherName += VitebskOCK.Content.ToString();
+                    if (VitebskOCK_col.Text == "")
+                    {
+                        check = false;
+                        VitebskOCK_col.BorderThickness = new Thickness(3);
+                        VitebskOCK_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + VitebskOCK_col.Text + " раз. "; 
+                }
+                if (vitebskToksik == true)
+                {
+                    hospOtherName += VitebskToksik.Content.ToString();
+                    if (VitebskToksik_col.Text == "")
+                    {
+                        check = false;
+                        VitebskToksik_col.BorderThickness = new Thickness(3);
+                        VitebskToksik_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + VitebskToksik_col.Text + " раз. ";
+                }
+                if (lepelskaOPB == true)
+                {
+                    hospOtherName += LepelskaOPB.Content.ToString();
+                    if (LepelskaOPB_col.Text == "")
+                    {
+                        check = false;
+                        LepelskaOPB_col.BorderThickness = new Thickness(3);
+                        LepelskaOPB_col.BorderBrush = Brushes.Red;
+                    }
+                    else hospOtherName += " " + LepelskaOPB_col.Text + " раз.";
+                }
+                if (rKPB_PNPC == true)
+                {
+                    hospOtherName += RKPB_PNPC.Content.ToString();
+                    if (RKPB_PNPC_col.Text == "")
+                    {
+                        check = false;
+                        RKPB_PNPC_col.BorderThickness = new Thickness(3);
+                        RKPB_PNPC_col.BorderBrush = Brushes.Red;
+                    }
+                }
 
                 string otherHosTextBox = OtherHospTextBox.Text;
                 if (otherHosTextBox != "")
@@ -1138,7 +1486,7 @@ namespace HelaMedical
                 }
                 else
                 {
-                    MessageBox.Show("Не все данные введены");
+                    MessageBox.Show("Не все обязательные поля заполнены");
                     return;
                 }
             }
@@ -1953,6 +2301,276 @@ namespace HelaMedical
         private void MinskOblTubHosp_Unchecked(object sender, RoutedEventArgs e)
         {
             minskOblTubHosp = false;
+        }
+
+        private void BraslowCRB_Checked(object sender, RoutedEventArgs e)
+        {
+            braslowCRB = true;
+        }
+
+        private void BraslowCRB_Unchecked(object sender, RoutedEventArgs e)
+        {
+            braslowCRB = false;
+        }
+
+        private void VerhnedviskCPB_Checked(object sender, RoutedEventArgs e)
+        {
+            verhnedviskCPB = true;
+        }
+
+        private void VerhnedviskCPB_Unchecked(object sender, RoutedEventArgs e)
+        {
+            verhnedviskCPB = false;
+        }
+
+        private void GorodokskajaCRB_Checked(object sender, RoutedEventArgs e)
+        {
+            gorodokskajaCRB = true;
+        }
+
+        private void GorodokskajaCRB_Unchecked(object sender, RoutedEventArgs e)
+        {
+            gorodokskajaCRB = false;
+        }
+
+        private void DoksicrajaCRB_Unchecked(object sender, RoutedEventArgs e)
+        {
+            doksicrajaCRB = true;
+        }
+
+        private void DoksicrajaCRB_Checked(object sender, RoutedEventArgs e)
+        {
+            doksicrajaCRB = false;
+        }
+
+        private void Dubrovenskaja_Checked(object sender, RoutedEventArgs e)
+        {
+            dubrovenskaja = true;
+        }
+
+        private void Dubrovenskaja_Unchecked(object sender, RoutedEventArgs e)
+        {
+            dubrovenskaja = false;
+        }
+
+        private void Lepelskaja_Checked(object sender, RoutedEventArgs e)
+        {
+            lepelskaja = true;
+        }
+
+        private void Lepelskaja_Unchecked(object sender, RoutedEventArgs e)
+        {
+            lepelskaja = false;
+        }
+
+        private void Lioznenskaja_Checked(object sender, RoutedEventArgs e)
+        {
+            lioznenskaja = true;
+        }
+
+        private void Lioznenskaja_Unchecked(object sender, RoutedEventArgs e)
+        {
+            lioznenskaja = false;
+        }
+
+        private void Miorskaja_Checked(object sender, RoutedEventArgs e)
+        {
+            miorskaja = true;
+        }
+
+        private void Miorskaja_Unchecked(object sender, RoutedEventArgs e)
+        {
+            miorskaja = false;
+        }
+
+        private void Novoluomlsk_Checked(object sender, RoutedEventArgs e)
+        {
+            novoluomlsk = true;
+        }
+
+        private void Novoluomlsk_Unchecked(object sender, RoutedEventArgs e)
+        {
+            novoluomlsk = false;
+        }
+
+        private void Orscha_Checked(object sender, RoutedEventArgs e)
+        {
+            orscha = true;
+        }
+
+        private void Orscha_Unchecked(object sender, RoutedEventArgs e)
+        {
+            orscha = false;
+        }
+
+        private void Postav_Checked(object sender, RoutedEventArgs e)
+        {
+            postav = true;
+        }
+
+        private void Postav_Unchecked(object sender, RoutedEventArgs e)
+        {
+            postav = false;
+        }
+
+        private void Rossonsk_Checked(object sender, RoutedEventArgs e)
+        {
+            rossonsk = true;
+        }
+
+        private void Rossonsk_Unchecked(object sender, RoutedEventArgs e)
+        {
+            rossonsk = false;
+        }
+
+        private void Sennen_Checked(object sender, RoutedEventArgs e)
+        {
+            sennen = true;
+        }
+
+        private void Sennen_Unchecked(object sender, RoutedEventArgs e)
+        {
+            sennen = false;
+        }
+
+        private void Tolochin_Checked(object sender, RoutedEventArgs e)
+        {
+            tolochin = true;
+        }
+
+        private void Tolochin_Unchecked(object sender, RoutedEventArgs e)
+        {
+            tolochin = false;
+        }
+
+        private void Uschachi_Checked(object sender, RoutedEventArgs e)
+        {
+            uschachi = true;
+        }
+
+        private void Uschachi_Unchecked(object sender, RoutedEventArgs e)
+        {
+            uschachi = false;
+        }
+
+        private void Scharkovthinsk_Checked(object sender, RoutedEventArgs e)
+        {
+            scharkovthinsk = true;
+        }
+
+        private void Scharkovthinsk_Unchecked(object sender, RoutedEventArgs e)
+        {
+            scharkovthinsk = false;
+        }
+
+        private void Schumilinsk_Checked(object sender, RoutedEventArgs e)
+        {
+            schumilinsk = true;
+        }
+
+        private void Schumilinsk_Unchecked(object sender, RoutedEventArgs e)
+        {
+            schumilinsk = false;
+        }
+
+        private void Novopolock_Checked(object sender, RoutedEventArgs e)
+        {
+            novopolock = true;
+        }
+
+        private void Novopolock_Unchecked(object sender, RoutedEventArgs e)
+        {
+            novopolock = false;
+        }
+
+        private void VitebskBSMP_Checked(object sender, RoutedEventArgs e)
+        {
+            vitebskBSMP = true;
+        }
+
+        private void VitebskBSMP_Unchecked(object sender, RoutedEventArgs e)
+        {
+            vitebskBSMP = false;
+        }
+
+        private void VOKC_Checked(object sender, RoutedEventArgs e)
+        {
+            vOKC = true;
+        }
+
+        private void VOKC_Unchecked(object sender, RoutedEventArgs e)
+        {
+            vOKC = false;
+        }
+
+        private void BraslovOPB_Checked(object sender, RoutedEventArgs e)
+        {
+            braslovOPB = true; 
+        }
+
+        private void BraslovOPB_Unchecked(object sender, RoutedEventArgs e)
+        {
+            braslovOPB = false;
+        }
+
+        private void VitebskOCK_Checked(object sender, RoutedEventArgs e)
+        {
+            vitebskOCK = true;
+        }
+
+        private void VitebskOCK_Unchecked(object sender, RoutedEventArgs e)
+        {
+            vitebskOCK = false;
+        }
+
+        private void VitebskToksik_Checked(object sender, RoutedEventArgs e)
+        {
+            vitebskToksik = true;
+        }
+
+        private void VitebskToksik_Unchecked(object sender, RoutedEventArgs e)
+        {
+            vitebskToksik = false;
+        }
+
+        private void LepelskaOPB_Checked(object sender, RoutedEventArgs e)
+        {
+            lepelskaOPB = true;
+        }
+
+        private void LepelskaOPB_Unchecked(object sender, RoutedEventArgs e)
+        {
+            lepelskaOPB = false;
+        }
+
+        private void RKPB_PNPC_Checked(object sender, RoutedEventArgs e)
+        {
+            rKPB_PNPC = true;
+        }
+
+        private void RKPB_PNPC_Unchecked(object sender, RoutedEventArgs e)
+        {
+            rKPB_PNPC = false;
+        }
+
+        private void PolockOPB_Checked(object sender, RoutedEventArgs e)
+        {
+            polockOPB = true;
+        }
+
+        private void PolockOPB_Unchecked(object sender, RoutedEventArgs e)
+        {
+            polockOPB = false;
+        }
+
+        private void BeschenkoviciCRB_Checked(object sender, RoutedEventArgs e)
+        {
+            beschenkoviciCRB = true;
+        }
+
+        private void BeschenkoviciCRB_Unchecked(object sender, RoutedEventArgs e)
+        {
+            beschenkoviciCRB = false;
         }
     }
 }

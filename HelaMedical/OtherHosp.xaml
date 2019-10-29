@@ -23,7 +23,7 @@
                     <ColumnDefinition Width="50"/>
                     <ColumnDefinition Width="20"/>
                 </Grid.ColumnDefinitions>
-                <Grid Grid.Column="0" Height="869" VerticalAlignment="Top">
+                <Grid Grid.Column="0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="30"/>
                         <RowDefinition Height="20"/>
@@ -56,10 +56,23 @@
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
+                        <RowDefinition Height="30"/>
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
-                        <RowDefinition Height="50*"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
                         <RowDefinition Height="10"/>
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="0">
@@ -273,6 +286,122 @@
                         <TextBox Name ="OtherHospTextBox"
                                  Style="{StaticResource TextBoxFull}"/>
                     </Grid>
+                    <Grid Grid.Row="31">
+                        <Label Content="Больницы Гомельской области:"
+                       Style="{StaticResource LabelDiag}"/>
+                    </Grid>
+                    <Grid Grid.Row="32" Background="LightGray">
+                        <CheckBox Name="GomelOblKlinBol"
+                                  Content="УЗ «Гомельская областная клиническая больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="GomelOblKlinBol_Checked"
+                                  Unchecked="GomelOblKlinBol_UnChecked"/>
+                    </Grid>
+                    <Grid Grid.Row="33">
+                        <CheckBox Name ="GomelGorKlinBol1"
+                          Content="ГУЗ «Гомельская городская клиническая больница №1»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="GomelGorKlinBol1_Checked"
+                                  Unchecked="GomelGorKlinBol1_UnChecked"/>
+                    </Grid>
+                    <Grid Grid.Row="34" Background="LightGray">
+                        <CheckBox Name ="GomelGorKlinBol2"
+                                  Content="УЗ «Гомельская городская клиническая больница №2»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="GomelGorKlinBol2_Checked"
+                                  Unchecked="GomelGorKlinBol2_UnChecked"/>
+                    </Grid>
+                    <Grid Grid.Row="35">
+                        <CheckBox Name="GomelGorKlinBol3"
+                          Content="УЗ «Гомельская городская клиническая больница №3»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="GomelGorKlinBol3_Checked"
+                                  Unchecked="GomelGorKlinBol3_UnChecked"/>
+                    </Grid>
+                    <Grid Grid.Row="36" Background="LightGray">
+                        <CheckBox Name ="GomelGorBol4"
+                                  Content="ГУЗ «Гомельская городская больница №4»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="GomelGorBol4_Checked"
+                                  Unchecked="GomelGorBol4_UnChecked"/>
+                    </Grid>
+                    <Grid Grid.Row="37">
+                        <CheckBox Name ="GomelGorKlinBolSkorMedPom"
+                                  Content="ГУЗ «Гомельская городская клиническая больница скорой медицинской помощи»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="GomelGorKlinBolSkorMedPom_Checked"
+                                  Unchecked="GomelGorKlinBolSkorMedPom_UnChecked"/>
+                    </Grid>
+                    <Grid Grid.Row="38" Background="LightGray">
+                        <CheckBox Name ="GomelOblInfekcKlinBol"
+                                  Content="УЗ «Гомельская областная инфекционная клиническая больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="GomelOblInfekcKlinBol_Checked"
+                                  Unchecked="GomelOblInfekcKlinBol_UnChecked"/>
+                    </Grid>
+                    <Grid Grid.Row="39">
+                        <CheckBox Name ="GomelOblKlinPsihBol" 
+                                  Content="УЗ «Гомельская областная клиническая психиатрическая больница»" 
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="GomelOblKlinPsihBol_Checked"
+                                  Unchecked="GomelOblKlinPsihBol_UnChecked"/>
+                    </Grid>
+                    <Grid Grid.Row="40" Background="LightGray">
+                        <CheckBox Name ="GomelOblSpecKlinBol" 
+                                  Content="УЗ «Гомельская областная специализированная клиническая больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="GomelOblSpecKlinBol_Checked"
+                                  Unchecked="GomelOblSpecKlinBol_UnChecked"/>
+                    </Grid>
+                    <Grid Grid.Row="41">
+                        <CheckBox Name ="GomelOblTuberKlinBol" 
+                                  Content="УЗ «Гомельская областная туберкулезная клиническая больница»" 
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="GomelOblTuberKlinBol_Checked"
+                                  Unchecked="GomelOblTuberKlinBol_UnChecked"/>
+                    </Grid>
+                    <Grid Grid.Row="42" Background="LightGray">
+                        <CheckBox Name ="GomelIOV" 
+                                  Content="УЗ «Гомельский областной клинический госпиталь ИОВ»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="GomelIOV_Checked"
+                                  Unchecked="GomelIOV_UnChecked"/>
+                    </Grid>
+                    <Grid Grid.Row="43">
+                        <CheckBox Name ="GomelOblKlinKardioCentr" 
+                                  Content="УЗ «Гомельский областной клинический кардиологический центр»" 
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="GomelOblKlinKardioCentr_Checked"
+                                  Unchecked="GomelOblKlinKardioCentr_UnChecked"/>
+                    </Grid>
+                    <Grid Grid.Row="44" Background="LightGray">
+                        <CheckBox Name ="GomelOblKlinOnkoDis" 
+                                  Content="УЗ «Гомельский областной клинический онкологический диспансер»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="GomelOblKlinOnkoDis_Checked"
+                                  Unchecked="GomelOblKlinOnkoDis_UnChecked"/>
+                    </Grid>
+                    <Grid Grid.Row="45">
+                        <CheckBox Name="BraginCentrRaionBol" 
+                                  Content="УЗ «Брагинская центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="BraginCentrRaionBol_Checked"
+                                  Unchecked="BraginCentrRaionBol_UnChecked"/>
+                    </Grid>
+                    <Grid Grid.Row="46" Background="LightGray">
+                        <CheckBox Name ="Buda_KoshelCentrBol"
+                                  Content="УЗ «Буда-Кошелевская  центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="Buda_KoshelCentrBol_Checked"
+                                  Unchecked="Buda_KoshelCentrBol_UnChecked"/>
+                    </Grid>
+                    <Grid Grid.Row="47">
+                        <CheckBox Name ="VetkovsCentrBol"
+                                  Content="УЗ «Ветковская центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="VetkovsCentrBol_Checked"
+                                  Unchecked="VetkovsCentrBol_UnChecked"/>
+                    </Grid>
                 </Grid>
                 <Grid Grid.Column="1">
                     <Grid.RowDefinitions>
@@ -307,11 +436,25 @@
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
+                        <RowDefinition Height="30"/>
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
-                        <RowDefinition Height="50*"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
                         <RowDefinition Height="10"/>
+
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="0">
                         <Label Content="Кол-во"
@@ -437,9 +580,95 @@
                         <TextBox Name ="OtherHospTextBox_Col"
                          Style="{StaticResource TextBoxFull}"/>
                     </Grid>
+                    <Grid Grid.Row="31">
+                        <Label Content="Кол-во"
+                       Style="{StaticResource LabelDiag2}"/>
+                    </Grid>
+                    <Grid Grid.Row="32" Background="LightGray">
+                        <TextBox Name="GomelOblKlinBol_Col"
+                                 Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="33">
+                        <TextBox Name ="GomelGorKlinBol1_Col"
+                                 Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="34" Background="LightGray">
+                        <TextBox Name ="GomelGorKlinBol2_Col" 
+                                 Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="35">
+                        <TextBox Name="GomelGorKlinBol3_Col"
+                                 Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="36" Background="LightGray">
+                        <TextBox Name ="GomelGorBol4_Col"
+                                 Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="37">
+                        <TextBox Name ="GomelGorKlinBolSkorMedPom_Col"
+                                 Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="38" Background="LightGray">
+                        <TextBox Name ="GomelOblInfekcKlinBol_Col"
+                                 Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="39">
+                        <TextBox Name ="GomelOblKlinPsihBol_Col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="40" Background="LightGray">
+                        <TextBox Name ="GomelOblSpecKlinBol_Col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="41">
+                        <TextBox Name ="GomelOblTuberKlinBol_Col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="42" Background="LightGray">
+                        <TextBox Name ="GomelIOV_Col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="43">
+                        <TextBox Name ="GomelOblKlinKardioCentr_Col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="44" Background="LightGray">
+                        <TextBox Name ="GomelOblKlinOnkoDis_Col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="45" Background="LightGray">
+                        <TextBox Name="BraginCentrRaionBol_Col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="46">
+                        <TextBox Name ="Buda_KoshelCentrBol_Col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="47" Background="LightGray">
+                        <TextBox Name ="VetkovsCentrBol_Col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
                 </Grid>
                 <Grid Grid.Column="3">
                     <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
                         <RowDefinition Height="30"/>
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
@@ -465,255 +694,304 @@
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
-                        <RowDefinition Height="20"/>
-                        <RowDefinition Height="20"/>
-                        <RowDefinition Height="20"/>
-                        <RowDefinition Height="20"/>
-                        <RowDefinition Height="20"/>
-                        <RowDefinition Height="20"/>
-                        <RowDefinition Height="20"/>
-                        <RowDefinition Height="20"/>
-                        <RowDefinition Height="20"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="70"/>
                         <RowDefinition Height="10"/>
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="0">
-                        <Label Content="Больницы Гомельской области:"
+                        <Label Content="продолжение больниц Гомельской области:"
                        Style="{StaticResource LabelDiag}"/>
                     </Grid>
-                    <Grid Grid.Row="1" Background="LightGray">
-                        <CheckBox Name="GomelOblKlinBol"
-                                  Content="УЗ «Гомельская областная клиническая больница»"
-                                  Style="{StaticResource CheckBoxLeft}"
-                                  Checked="GomelOblKlinBol_Checked"
-                                  Unchecked="GomelOblKlinBol_UnChecked"/>
-                    </Grid>
-                    <Grid Grid.Row="2">
-                        <CheckBox Name ="GomelGorKlinBol1"
-                          Content="ГУЗ «Гомельская городская клиническая больница №1»"
-                                  Style="{StaticResource CheckBoxLeft}"
-                                  Checked="GomelGorKlinBol1_Checked"
-                                  Unchecked="GomelGorKlinBol1_UnChecked"/>
-                    </Grid>
-                    <Grid Grid.Row="3" Background="LightGray">
-                        <CheckBox Name ="GomelGorKlinBol2"
-                                  Content="УЗ «Гомельская городская клиническая больница №2»"
-                                  Style="{StaticResource CheckBoxLeft}"
-                                  Checked="GomelGorKlinBol2_Checked"
-                                  Unchecked="GomelGorKlinBol2_UnChecked"/>
-                    </Grid>
-                    <Grid Grid.Row="4">
-                        <CheckBox Name="GomelGorKlinBol3"
-                          Content="УЗ «Гомельская городская клиническая больница №3»"
-                                  Style="{StaticResource CheckBoxLeft}"
-                                  Checked="GomelGorKlinBol3_Checked"
-                                  Unchecked="GomelGorKlinBol3_UnChecked"/>
-                    </Grid>
-                    <Grid Grid.Row="5" Background="LightGray">
-                        <CheckBox Name ="GomelGorBol4"
-                                  Content="ГУЗ «Гомельская городская больница №4»"
-                                  Style="{StaticResource CheckBoxLeft}"
-                                  Checked="GomelGorBol4_Checked"
-                                  Unchecked="GomelGorBol4_UnChecked"/>
-                    </Grid>
-                    <Grid Grid.Row="6">
-                        <CheckBox Name ="GomelGorKlinBolSkorMedPom"
-                                  Content="ГУЗ «Гомельская городская клиническая больница скорой медицинской помощи»"
-                                  Style="{StaticResource CheckBoxLeft}"
-                                  Checked="GomelGorKlinBolSkorMedPom_Checked"
-                                  Unchecked="GomelGorKlinBolSkorMedPom_UnChecked"/>
-                    </Grid>
-                    <Grid Grid.Row="7" Background="LightGray">
-                        <CheckBox Name ="GomelOblInfekcKlinBol"
-                                  Content="УЗ «Гомельская областная инфекционная клиническая больница»"
-                                  Style="{StaticResource CheckBoxLeft}"
-                                  Checked="GomelOblInfekcKlinBol_Checked"
-                                  Unchecked="GomelOblInfekcKlinBol_UnChecked"/>
-                    </Grid>
-                    <Grid Grid.Row="8">
-                        <CheckBox Name ="GomelOblKlinPsihBol" 
-                                  Content="УЗ «Гомельская областная клиническая психиатрическая больница»" 
-                                  Style="{StaticResource CheckBoxLeft}"
-                                  Checked="GomelOblKlinPsihBol_Checked"
-                                  Unchecked="GomelOblKlinPsihBol_UnChecked"/>
-                    </Grid>
-                    <Grid Grid.Row="9" Background="LightGray">
-                        <CheckBox Name ="GomelOblSpecKlinBol" 
-                                  Content="УЗ «Гомельская областная специализированная клиническая больница»"
-                                  Style="{StaticResource CheckBoxLeft}"
-                                  Checked="GomelOblSpecKlinBol_Checked"
-                                  Unchecked="GomelOblSpecKlinBol_UnChecked"/>
-                    </Grid>
-                    <Grid Grid.Row="10">
-                        <CheckBox Name ="GomelOblTuberKlinBol" 
-                                  Content="УЗ «Гомельская областная туберкулезная клиническая больница»" 
-                                  Style="{StaticResource CheckBoxLeft}"
-                                  Checked="GomelOblTuberKlinBol_Checked"
-                                  Unchecked="GomelOblTuberKlinBol_UnChecked"/>
-                    </Grid>
-                    <Grid Grid.Row="11" Background="LightGray">
-                        <CheckBox Name ="GomelIOV" 
-                                  Content="УЗ «Гомельский областной клинический госпиталь ИОВ»"
-                                  Style="{StaticResource CheckBoxLeft}"
-                                  Checked="GomelIOV_Checked"
-                                  Unchecked="GomelIOV_UnChecked"/>
-                    </Grid>
-                    <Grid Grid.Row="12">
-                        <CheckBox Name ="GomelOblKlinKardioCentr" 
-                                  Content="УЗ «Гомельский областной клинический кардиологический центр»" 
-                                  Style="{StaticResource CheckBoxLeft}"
-                                  Checked="GomelOblKlinKardioCentr_Checked"
-                                  Unchecked="GomelOblKlinKardioCentr_UnChecked"/>
-                    </Grid>
-                    <Grid Grid.Row="13" Background="LightGray">
-                        <CheckBox Name ="GomelOblKlinOnkoDis" 
-                                  Content="УЗ «Гомельский областной клинический онкологический диспансер»"
-                                  Style="{StaticResource CheckBoxLeft}"
-                                  Checked="GomelOblKlinOnkoDis_Checked"
-                                  Unchecked="GomelOblKlinOnkoDis_UnChecked"/>
-                    </Grid>
-                    <Grid Grid.Row="14" Background="LightGray">
-                        <CheckBox Name="BraginCentrRaionBol" 
-                                  Content="УЗ «Брагинская центральная районная больница»"
-                                  Style="{StaticResource CheckBoxLeft}"
-                                  Checked="BraginCentrRaionBol_Checked"
-                                  Unchecked="BraginCentrRaionBol_UnChecked"/>
-                    </Grid>
-                    <Grid Grid.Row="15">
-                        <CheckBox Name ="Buda_KoshelCentrBol"
-                                  Content="УЗ «Буда-Кошелевская  центральная районная больница»"
-                                  Style="{StaticResource CheckBoxLeft}"
-                                  Checked="Buda_KoshelCentrBol_Checked"
-                                  Unchecked="Buda_KoshelCentrBol_UnChecked"/>
-                    </Grid>
-                    <Grid Grid.Row="16" Background="LightGray">
-                        <CheckBox Name ="VetkovsCentrBol"
-                                  Content="УЗ «Ветковская центральная районная больница»"
-                                  Style="{StaticResource CheckBoxLeft}"
-                                  Checked="VetkovsCentrBol_Checked"
-                                  Unchecked="VetkovsCentrBol_UnChecked"/>
-                    </Grid>
-                    <Grid Grid.Row="17">
+                    <Grid Grid.Row="1">
                         <CheckBox Name ="DobrushCentrBol"
                                   Content="УЗ «Добрушская центральная районная больница»"
                                   Style="{StaticResource CheckBoxLeft}"
                                   Checked="DobrushCentrBol_Checked"
                                   Unchecked="DobrushCentrBol_UnChecked"/>
                     </Grid>
-                    <Grid Grid.Row="18" Background="LightGray">
+                    <Grid Grid.Row="2" Background="LightGray">
                         <CheckBox Name ="ElskajaCentrBol"
                                   Content="УЗ «Ельская центральная районная больница»"
                                   Style="{StaticResource CheckBoxLeft}"
                                   Checked="ElskajaCentrBol_Checked"
                                   Unchecked="ElskajaCentrBol_UnChecked"/>
                     </Grid>
-                    <Grid Grid.Row="19">
+                    <Grid Grid.Row="3">
                         <CheckBox  Name ="ZitkovsCentrBol"
                                    Content="УЗ «Житковичская центральная районная больница»"
                                    Style="{StaticResource CheckBoxLeft}"
                                    Checked="ZitkovsCentrBol_Checked"
                                    Unchecked="ZitkovsCentrBol_UnChecked"/>
                     </Grid>
-                    <Grid Grid.Row="20" Background="LightGray">
+                    <Grid Grid.Row="4" Background="LightGray">
                         <CheckBox Name ="ZlobiCentrBol"
                                   Content="УЗ «Жлобинская центральная районная больница»"
                                   Style="{StaticResource CheckBoxLeft}"
                                   Checked="ZlobiCentrBol_Checked"
                                   Unchecked="ZlobiCentrBol_UnChecked"/>
                     </Grid>
-                    <Grid Grid.Row="21">
+                    <Grid Grid.Row="5">
                         <CheckBox Name="KalinkovCentrBol"
                                   Content="УЗ «Калинковичская центральная районная больница»"
                                   Style="{StaticResource CheckBoxLeft}"
                                   Checked="KalinkovCentrBol_Checked"
                                   Unchecked="KalinkovCentrBol_UnChecked"/>
                     </Grid>
-                    <Grid Grid.Row="22" Background="LightGray">
+                    <Grid Grid.Row="6" Background="LightGray">
                         <CheckBox Name="KormjanskCentrBol"
                                   Content ="УЗ «Кормянская центральная районная больница»"
                                   Style="{StaticResource CheckBoxLeft}"
                                   Checked="KormjanskCentrBol_Checked"
                                   Unchecked="KormjanskCentrBol_UnChecked"/>
                     </Grid>
-                    <Grid Grid.Row="23">
+                    <Grid Grid.Row="7">
                         <CheckBox Name ="LelcicCentrBol"
                                   Content="УЗ «Лельчицкая центральная районная больница»"
                                   Style="{StaticResource CheckBoxLeft}"
                                   Checked="LelcicCentrBol_Checked"
                                   Unchecked="LelcicCentrBol_UnChecked"/>
                     </Grid>
-                    <Grid Grid.Row="24" Background="LightGray">
+                    <Grid Grid.Row="8" Background="LightGray">
                         <CheckBox Name ="LoevskCentrBol"
                                   Content="УЗ «Лоевская центральная районная больница»"
                                   Style="{StaticResource CheckBoxLeft}"
                                   Checked="LoevskCentrBol_Checked"
                                   Unchecked="LoevskCentrBol_UnChecked"/>
                     </Grid>
-                    <Grid Grid.Row="25">
+                    <Grid Grid.Row="9">
                         <CheckBox Name ="MozirCentrGorPolic"
                                   Content="ГУЗ «Мозырская центральная городская поликлиника»"
                                   Style="{StaticResource CheckBoxLeft}"
                                   Checked="MozirCentrGorPolic_Checked"
                                   Unchecked="MozirCentrGorPolic_UnChecked"/>
                     </Grid>
-                    <Grid Grid.Row="26" Background="LightGray">
+                    <Grid Grid.Row="10" Background="LightGray">
                         <CheckBox Name="NarovlCentrBol"
                                   Content="УЗ «Наровлянская центральная районная больница»"
                                   Style="{StaticResource CheckBoxLeft}"
                                   Checked="NarovlCentrBol_Checked"
                                   Unchecked="NarovlCentrBol_UnChecked"/>
                     </Grid>
-                    <Grid Grid.Row="27">
+                    <Grid Grid.Row="11">
                         <CheckBox Name="OktjabrCentrBol"
                                   Content="УЗ «Октябрьская центральная районная больница»"
                                   Style="{StaticResource CheckBoxLeft}"
                                   Checked="OktjabrCentrBol_Checked"
                                   Unchecked="OktjabrCentrBol_UnChecked"/>
                     </Grid>
-                    <Grid Grid.Row="28" Background="LightGray">
+                    <Grid Grid.Row="12" Background="LightGray">
                         <CheckBox Name="PetrikovCentrBol"
                                   Content="УЗ «Петриковская  центральная районная больница»"
                                   Style="{StaticResource CheckBoxLeft}"
                                   Checked="PetrikovCentrBol_Checked"
                                   Unchecked="PetrikovCentrBol_UnChecked"/>
                     </Grid>
-                    <Grid Grid.Row="29">
+                    <Grid Grid.Row="13">
                         <CheckBox Name="RecickajaCentBol"
                                   Content="УЗ «Речицкая центральная районная больница»"
                                   Style="{StaticResource CheckBoxLeft}"
                                   Checked="RecickajaCentBol_Checked"
                                   Unchecked="RecickajaCentBol_UnChecked"/>
                     </Grid>
-                    <Grid Grid.Row="30" Background="LightGray">
+                    <Grid Grid.Row="14" Background="LightGray">
                         <CheckBox Name="RogacevCentrBol"
                                   Content="УЗ «Рогачевская центральная районная больница»"
                                   Style="{StaticResource CheckBoxLeft}"
                                   Checked="RogacevCentrBol_Checked"
                                   Unchecked="RogacevCentrBol_UnChecked"/>
                     </Grid>
-                    <Grid Grid.Row="31">
+                    <Grid Grid.Row="15">
                         <CheckBox Name="SvetlagorCentrBol"
                                   Content="УЗ «Светлогорская центральная районная больница»"
                                   Style="{StaticResource CheckBoxLeft}"
                                   Checked="SvetlagorCentrBol_Checked"
                                   Unchecked="SvetlagorCentrBol_UnChecked"/>
                     </Grid>
-                    <Grid Grid.Row="32" Background="LightGray">
+                    <Grid Grid.Row="16" Background="LightGray">
                         <CheckBox Name="HoinikCentrBol"
                                   Content="УЗ «Хойникская центральная районная больница»"
                                   Style="{StaticResource CheckBoxLeft}"
                                   Checked="HoinikCentrBol_Checked"
                                   Unchecked="HoinikCentrBol_UnChecked"/>
                     </Grid>
-                    <Grid Grid.Row="33">
+                    <Grid Grid.Row="17">
                         <CheckBox Name="CecerskajaCentrBol"
                                   Content="УЗ «Чечерская центральная районная больница»"
                                   Style="{StaticResource CheckBoxLeft}"
                                   Checked="CecerskajaCentrBol_Checked"
                                   Unchecked="CecerskajaCentrBol_UnChecked"/>
                     </Grid>
-                    
+                    <Grid Grid.Row="18">
+                        <Label Content="Больницы Минской области:" 
+                               Style="{StaticResource LabelDiag}"/>
+                    </Grid>
+                    <Grid Grid.Row="19" Background="LightGray">
+                        <CheckBox Name="MinOblKlinCentrPSI"
+                                  Content="УЗ «Минский областной клинический центр «Психиатрия-наркология»" 
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="MinOblKlinCentrPSI_Checked"
+                                  Unchecked="MinOblKlinCentrPSI_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="20">
+                        <CheckBox Name="SoliCentrRainHosp"
+                                  Content="УЗ «Солигорская центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="SoliCentrRainHosp_Checked"
+                                  Unchecked="SoliCentrRainHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="21" Background="LightGray">
+                        <CheckBox Name="BorisCentrRaionHosp" 
+                                  Content="УЗ «Борисовская центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="BorisCentrRaionHosp_Checked"
+                                  Unchecked="BorisCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="22">
+                        <CheckBox Name="MolodechCentrRaionHosp"
+                                  Content="УЗ «Молодечненская центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="MolodechCentrRaionHosp_Cheked"
+                                  Unchecked="MolodechCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="23" Background="LightGray">
+                        <CheckBox Name="BerezinoCentrRaionHosp"
+                                  Content="УЗ «Березинская центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="BerezinoCentrRaionHosp_Checked"
+                                  Unchecked="BerezinoCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="24">
+                        <CheckBox Name="VileiskaCentrRaionHosp" 
+                                  Content="УЗ «Вилейская центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="VileiskaCentrRaionHosp_Checked"
+                                  Unchecked="VileiskaCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="25" Background="LightGray">
+                        <CheckBox Name="VolozinCentrRaionHosp"
+                                  Content="УЗ «Воложинская центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="VolozinCentrRaionHosp_Checked"
+                                  Unchecked="VolozinCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="26" >
+                        <CheckBox Name="DerzinskiCentrRaionHosp"
+                                  Content="УЗ «Дзержинская центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="DerzinskiCentrRaionHosp_Checked"
+                                  Unchecked="DerzinskiCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="27" Background="LightGray">
+                        <CheckBox Name="KleckCentrRaionHosp"
+                                  Content="УЗ «Клецкая центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="KleckCentrRaionHosp_Checked"
+                                  Unchecked="KleckCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="28">
+                        <CheckBox Name="KopilCentrRaionHosp" 
+                                  Content="УЗ «Копыльский центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="KopilCentrRaionHosp_Checked"
+                                  Unchecked="KopilCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="29" Background="LightGray">
+                        <CheckBox Name="KrupskCentrRaionHosp"
+                                  Content="УЗ «Крупская центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="KrupskCentrRaionHosp_Checked"
+                                  Unchecked="KrupskCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="30">
+                        <CheckBox Name="LogoskCentrRaionHosp" 
+                                  Content="УЗ «Логойская центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="LogoskCentrRaionHosp_Checked"
+                                  Unchecked="LogoskCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="31" Background="LightGray">
+                        <CheckBox Name="LubanskCentrRaionHosp"
+                                  Content="УЗ «Любанская центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="LubanskCentrRaionHosp_Checked"
+                                  Unchecked="LubanskCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="32">
+                        <CheckBox Name="MjadelCentrRaionHosp" 
+                                  Content="УЗ «Мядельская центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="MjadelCentrRaionHosp_Checked"
+                                  Unchecked="MjadelCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="33" Background="LightGray">
+                        <CheckBox Name="NesvizkCentrRaionHosp"
+                                  Content="УЗ «Несвижская центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="NesvizkCentrRaionHosp_Checked"
+                                  Unchecked="NesvizkCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="34">
+                        <CheckBox Name="MarjanaGorkaCentrRaionHosp" 
+                                  Content="УЗ «Марьиногорская центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="MarjanaGorkaCentrRaionHosp_Checked"
+                                  Unchecked="MarjanaGorkaCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="35" Background="LightGray">
+                        <CheckBox Name="SluckCentrRaionHosp"
+                                  Content="УЗ «Слуцкая ЦРБ»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="SluCentrRaionHosp_Checked"
+                                  Unchecked="SluCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="36">
+                        <CheckBox Name="SmoleviciCentrRaionHosp" 
+                                  Content="УЗ «Смолевичская центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="SmoleviciCentrRaionHosp_Checked"
+                                  Unchecked="SmoleviciCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="37" Background="LightGray">
+                        <CheckBox Name="StaradorozCentrRaionHosp"
+                                  Content="УЗ «Стародорожская центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="StaradorozCentrRaionHosp_Checked"
+                                  Unchecked="StaradorozCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="38">
+                        <CheckBox Name="StolbcCentrRaionHosp" 
+                                  Content="УЗ «Столбцовская центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="StolbcCentrRaionHosp_Checked"
+                                  Unchecked="StolbcCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="39" Background="LightGray">
+                        <CheckBox Name="UzdaCentrRaionHosp"
+                                  Content="УЗ «Узденская центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="UzdaCentrRaionHosp_Checked"
+                                  Unchecked="UzdaCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="40">
+                        <CheckBox Name="CervenCentrRaionHosp" 
+                                  Content="УЗ «Червенская центральная районная больница»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="CervenCentrRaionHosp_Checked"
+                                  Unchecked="CervenCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="41" Background="LightGray">
+                        <CheckBox Name="ZodinoCentrRaionHosp"
+                                  Content="УЗ «Жодинская ЦГБ»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="ZodinoCentrRaionHosp_Checked"
+                                  Unchecked="ZodinoCentrRaionHosp_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="42">
+                        <CheckBox Name="MinskOblTubHosp" 
+                                  Content="УЗ «Минский областной противотуберкулезный диспансер»"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="MinskOblTubHosp_Checked"
+                                  Unchecked="MinskOblTubHosp_Unchecked"/>
+                    </Grid>
+
 
                 </Grid>
                 <Grid Grid.Column="4">
@@ -736,6 +1014,7 @@
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
+                        <RowDefinition Height="30"/>
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
@@ -752,140 +1031,186 @@
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
-                        <RowDefinition Height="20*"/>
-                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
                         <RowDefinition Height="10"/>
                     </Grid.RowDefinitions>
-                    <Grid Grid.Row="1" Background="LightGray">
-                        <TextBox Name="GomelOblKlinBol_Col"
-                                 Style="{StaticResource TextBoxFull}"/>
+                    <Grid Grid.Row="0">
+                        <Label Content="Кол-во"
+                       Style="{StaticResource LabelDiag2}"/>
                     </Grid>
-                    <Grid Grid.Row="2">
-                        <TextBox Name ="GomelGorKlinBol1_Col"
-                                 Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="3" Background="LightGray">
-                        <TextBox Name ="GomelGorKlinBol2_Col" 
-                                 Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="4">
-                        <TextBox Name="GomelGorKlinBol3_Col"
-                                 Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="5" Background="LightGray">
-                        <TextBox Name ="GomelGorBol4_Col"
-                                 Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="6">
-                        <TextBox Name ="GomelGorKlinBolSkorMedPom_Col"
-                                 Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="7" Background="LightGray">
-                        <TextBox Name ="GomelOblInfekcKlinBol_Col"
-                                 Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="8">
-                        <TextBox Name ="GomelOblKlinPsihBol_Col" 
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="9" Background="LightGray">
-                        <TextBox Name ="GomelOblSpecKlinBol_Col" 
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="10">
-                        <TextBox Name ="GomelOblTuberKlinBol_Col" 
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="11" Background="LightGray">
-                        <TextBox Name ="GomelIOV_Col" 
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="12">
-                        <TextBox Name ="GomelOblKlinKardioCentr_Col" 
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="13" Background="LightGray">
-                        <TextBox Name ="GomelOblKlinOnkoDis_Col" 
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="14" Background="LightGray">
-                        <TextBox Name="BraginCentrRaionBol_Col" 
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="15">
-                        <TextBox Name ="Buda_KoshelCentrBol_Col"
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="16" Background="LightGray">
-                        <TextBox Name ="VetkovsCentrBol_Col"
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="17">
+                    <Grid Grid.Row="1">
                         <TextBox Name ="DobrushCentrBol_Col"
                                   Style="{StaticResource TextBoxFull}"/>
                     </Grid>
-                    <Grid Grid.Row="18" Background="LightGray">
+                    <Grid Grid.Row="2" Background="LightGray">
                         <TextBox Name ="ElskajaCentrBol_Col"
                                   Style="{StaticResource TextBoxFull}"/>
                     </Grid>
-                    <Grid Grid.Row="19">
+                    <Grid Grid.Row="3">
                         <TextBox  Name ="ZitkovsCentrBol_Col"
                                    Style="{StaticResource TextBoxFull}"/>
                     </Grid>
-                    <Grid Grid.Row="20" Background="LightGray">
+                    <Grid Grid.Row="4" Background="LightGray">
                         <TextBox Name ="ZlobiCentrBol_Col"
                                   Style="{StaticResource TextBoxFull}"/>
                     </Grid>
-                    <Grid Grid.Row="21">
+                    <Grid Grid.Row="5">
                         <TextBox Name="KalinkovCentrBol_Col"
                                   Style="{StaticResource TextBoxFull}"/>
                     </Grid>
-                    <Grid Grid.Row="22" Background="LightGray">
+                    <Grid Grid.Row="6" Background="LightGray">
                         <TextBox Name="KormjanskCentrBol_Col"
                                   Style="{StaticResource TextBoxFull}"/>
                     </Grid>
-                    <Grid Grid.Row="23">
+                    <Grid Grid.Row="7">
                         <TextBox Name ="LelcicCentrBol_Col"
                                   Style="{StaticResource TextBoxFull}"/>
                     </Grid>
-                    <Grid Grid.Row="24" Background="LightGray">
+                    <Grid Grid.Row="8" Background="LightGray">
                         <TextBox Name ="LoevskCentrBol_Col"
                                   Style="{StaticResource TextBoxFull}"/>
                     </Grid>
-                    <Grid Grid.Row="25">
+                    <Grid Grid.Row="9">
                         <TextBox Name ="MozirCentrGorPolic_Col"
                                   Style="{StaticResource TextBoxFull}"/>
                     </Grid>
-                    <Grid Grid.Row="26" Background="LightGray">
+                    <Grid Grid.Row="10" Background="LightGray">
                         <TextBox Name="NarovlCentrBol_Col"
                                   Style="{StaticResource TextBoxFull}"/>
                     </Grid>
-                    <Grid Grid.Row="27">
+                    <Grid Grid.Row="11">
                         <TextBox Name="OktjabrCentrBol_Col"
                                   Style="{StaticResource TextBoxFull}"/>
                     </Grid>
-                    <Grid Grid.Row="28" Background="LightGray">
+                    <Grid Grid.Row="12" Background="LightGray">
                         <TextBox Name="PetrikovCentrBol_Col"
                                   Style="{StaticResource TextBoxFull}"/>
                     </Grid>
-                    <Grid Grid.Row="29">
+                    <Grid Grid.Row="13">
                         <TextBox Name="RecickajaCentBol_Col"
                                   Style="{StaticResource TextBoxFull}"/>
                     </Grid>
-                    <Grid Grid.Row="30" Background="LightGray">
+                    <Grid Grid.Row="14" Background="LightGray">
                         <TextBox Name="RogacevCentrBol_Col"
                                   Style="{StaticResource TextBoxFull}"/>
                     </Grid>
-                    <Grid Grid.Row="31">
+                    <Grid Grid.Row="15">
                         <TextBox Name="SvetlagorCentrBol_Col"
                                   Style="{StaticResource TextBoxFull}"/>
                     </Grid>
-                    <Grid Grid.Row="32" Background="LightGray">
+                    <Grid Grid.Row="16" Background="LightGray">
                         <TextBox Name="HoinikCentrBol_Col"
                                   Style="{StaticResource TextBoxFull}"/>
                     </Grid>
-                    <Grid Grid.Row="33">
+                    <Grid Grid.Row="17">
                         <TextBox Name="CecerskajaCentrBol_Col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="18">
+                        <Label Content="Кол-во"
+                       Style="{StaticResource LabelDiag2}"/>
+                    </Grid>
+                    <Grid Grid.Row="19" Background="LightGray">
+                        <TextBox Name="MinOblKlinCentrPSI_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="20">
+                        <TextBox Name="SoliCentrRainHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="21" Background="LightGray">
+                        <TextBox Name="BorisCentrRaionHosp_col"
+                                 Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="22">
+                        <TextBox Name="MolodechCentrRaionHosp_col"
+                                 Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="23" Background="LightGray">
+                        <TextBox Name="BerezinoCentrRaionHosp_col"
+                                 Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="24">
+                        <TextBox Name="VileiskaCentrRaionHosp_col"
+                                 Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="25" Background="LightGray">
+                        <TextBox Name="VolozinCentrRaionHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="26" >
+                        <TextBox Name="DerzinskiCentrRaionHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="27" Background="LightGray">
+                        <TextBox Name="KleckCentrRaionHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="28">
+                        <TextBox Name="KopilCentrRaionHosp_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="29" Background="LightGray">
+                        <TextBox Name="KrupskCentrRaionHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="30">
+                        <TextBox Name="LogoskCentrRaionHosp_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="31" Background="LightGray">
+                        <TextBox Name="LubanskCentrRaionHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="32">
+                        <TextBox Name="MjadelCentrRaionHosp_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="33" Background="LightGray">
+                        <TextBox Name="NesvizkCentrRaionHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="34">
+                        <TextBox Name="MarjanaGorkaCentrRaionHosp_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="35" Background="LightGray">
+                        <TextBox Name="SluckCentrRaionHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="36">
+                        <TextBox Name="SmoleviciCentrRaionHosp_col" 
+                                 Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="37" Background="LightGray">
+                        <TextBox Name="StaradorozCentrRaionHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="38">
+                        <TextBox Name="StolbcCentrRaionHosp_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="39" Background="LightGray">
+                        <TextBox Name="UzdaCentrRaionHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="40">
+                        <TextBox Name="CervenCentrRaionHosp_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="41" Background="LightGray">
+                        <TextBox Name="ZodinoCentrRaionHosp_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="42">
+                        <TextBox Name="MinskOblTubHosp_col" 
                                   Style="{StaticResource TextBoxFull}"/>
                     </Grid>
                 </Grid>
@@ -916,183 +1241,208 @@
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
                         <RowDefinition Height="20*"/>
                         <RowDefinition Height="70"/>
                         <RowDefinition Height="10"/>
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="0">
-                        <Label Content="Больницы Минской области:" 
+                        <Label Content="Витебская область" 
                                Style="{StaticResource LabelDiag}"/>
                     </Grid>
-                    <Grid Grid.Row="1" Background="LightGray">
-                        <CheckBox Name="MinOblKlinCentrPSI"
-                                  Content="УЗ «Минский областной клинический центр «Психиатрия-наркология»" 
-                                  Style="{StaticResource CheckBoxLeft}"
-                                  Checked="MinOblKlinCentrPSI_Checked"
-                                  Unchecked="MinOblKlinCentrPSI_Unchecked"/>
+                    <Grid Grid.Row ="1">
+                    <CheckBox Name ="PolockOPB"
+                              Content="Полоцкая ОПБ"
+                              Style="{StaticResource CheckBoxLeft}"
+                              Checked="PolockOPB_Checked"
+                              Unchecked="PolockOPB_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="2">
-                        <CheckBox Name="SoliCentrRainHosp"
-                                  Content="УЗ «Солигорская центральная районная больница»"
+                    <Grid Grid.Row="2" Background="LightGray">
+                        <CheckBox Name="BeschenkoviciCRB"
+                                  Content="Бешенковичская ЦРБ"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="SoliCentrRainHosp_Checked"
-                                  Unchecked="SoliCentrRainHosp_Unchecked"/>
+                                  Checked="BeschenkoviciCRB_Checked"
+                                  Unchecked="BeschenkoviciCRB_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="3" Background="LightGray">
-                        <CheckBox Name="BorisCentrRaionHosp" 
-                                  Content="УЗ «Борисовская центральная районная больница»"
+                    <Grid Grid.Row="3">
+                        <CheckBox Name="BraslowCRB"
+                                  Content="Брасловская ЦРБ"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="BorisCentrRaionHosp_Checked"
-                                  Unchecked="BorisCentrRaionHosp_Unchecked"/>
+                                  Checked="BraslowCRB_Checked"
+                                  Unchecked="BraslowCRB_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="4">
-                        <CheckBox Name="MolodechCentrRaionHosp"
-                                  Content="УЗ «Молодечненская центральная районная больница»"
+                    <Grid Grid.Row="4" Background="LightGray">
+                        <CheckBox Name="VerhnedviskCPB" 
+                                  Content="Верхнедвинская ЦПБ"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="MolodechCentrRaionHosp_Cheked"
-                                  Unchecked="MolodechCentrRaionHosp_Unchecked"/>
+                                  Checked="VerhnedviskCPB_Checked"
+                                  Unchecked="VerhnedviskCPB_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="5" Background="LightGray">
-                        <CheckBox Name="BerezinoCentrRaionHosp"
-                                  Content="УЗ «Березинская центральная районная больница»"
+                    <Grid Grid.Row="5">
+                        <CheckBox Name="GorodokskajaCRB" 
+                                  Content="Городокская ЦРБ"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="BerezinoCentrRaionHosp_Checked"
-                                  Unchecked="BerezinoCentrRaionHosp_Unchecked"/>
+                                  Checked="GorodokskajaCRB_Checked"
+                                  Unchecked="GorodokskajaCRB_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="6">
-                        <CheckBox Name="VileiskaCentrRaionHosp" 
-                                  Content="УЗ «Вилейская центральная районная больница»"
+                    <Grid Grid.Row="6" Background="LightGray">
+                        <CheckBox Name="DoksicrajaCRB"
+                                  Content="Докшицкая ЦРБ"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="VileiskaCentrRaionHosp_Checked"
-                                  Unchecked="VileiskaCentrRaionHosp_Unchecked"/>
+                                  Checked="DoksicrajaCRB_Checked"
+                                  Unchecked="DoksicrajaCRB_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="7" Background="LightGray">
-                        <CheckBox Name="VolozinCentrRaionHosp"
-                                  Content="УЗ «Воложинская центральная районная больница»"
+                    <Grid Grid.Row="7">
+                        <CheckBox Name="Dubrovenskaja" 
+                                  Content="Дубровенская ЦРБ"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="VolozinCentrRaionHosp_Checked"
-                                  Unchecked="VolozinCentrRaionHosp_Unchecked"/>
+                                  Checked="Dubrovenskaja_Checked"
+                                  Unchecked="Dubrovenskaja_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="8" >
-                        <CheckBox Name="DerzinskiCentrRaionHosp"
-                                  Content="УЗ «Дзержинская центральная районная больница»"
+                    <Grid Grid.Row="8" Background="LightGray">
+                        <CheckBox Name ="Lepelskaja"
+                                  Content="Лепельская ЦРБ"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="DerzinskiCentrRaionHosp_Checked"
-                                  Unchecked="DerzinskiCentrRaionHosp_Unchecked"/>
+                                  Checked="Lepelskaja_Checked"
+                                  Unchecked="Lepelskaja_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="9" Background="LightGray">
-                        <CheckBox Name="KleckCentrRaionHosp"
-                                  Content="УЗ «Клецкая центральная районная больница»"
+                    <Grid Grid.Row="9">
+                        <CheckBox Name="Lioznenskaja"
+                                  Content = "Лиозненская ЦРБ"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="KleckCentrRaionHosp_Checked"
-                                  Unchecked="KleckCentrRaionHosp_Unchecked"/>
+                                  Checked="Lioznenskaja_Checked"
+                                  Unchecked="Lioznenskaja_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="10">
-                        <CheckBox Name="KopilCentrRaionHosp" 
-                                  Content="УЗ «Копыльский центральная районная больница»"
+                    <Grid Grid.Row="10" Background="LightGray">
+                        <CheckBox Name ="Miorskaja"
+                                  Content="Миорская ЦРБ"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="KopilCentrRaionHosp_Checked"
-                                  Unchecked="KopilCentrRaionHosp_Unchecked"/>
+                                  Checked="Miorskaja_Checked"
+                                  Unchecked="Miorskaja_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="11" Background="LightGray">
-                        <CheckBox Name="KrupskCentrRaionHosp"
-                                  Content="УЗ «Крупская центральная районная больница»"
+                    <Grid Grid.Row="11">
+                        <CheckBox Name="Novoluomlsk" 
+                                  Content="Новолукомльская ЦРБ"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="KrupskCentrRaionHosp_Checked"
-                                  Unchecked="KrupskCentrRaionHosp_Unchecked"/>
+                                  Checked="Novoluomlsk_Checked"
+                                  Unchecked="Novoluomlsk_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="12">
-                        <CheckBox Name="LogoskCentrRaionHosp" 
-                                  Content="УЗ «Логойская центральная районная больница»"
+                    <Grid Grid.Row="12" Background="LightGray">
+                        <CheckBox Name ="Orscha" 
+                                  Content="Оршанская ЦП"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="LogoskCentrRaionHosp_Checked"
-                                  Unchecked="LogoskCentrRaionHosp_Unchecked"/>
+                                  Checked="Orscha_Checked"
+                                  Unchecked="Orscha_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="13" Background="LightGray">
-                        <CheckBox Name="LubanskCentrRaionHosp"
-                                  Content="УЗ «Любанская центральная районная больница»"
+                    <Grid Grid.Row="13">
+                        <CheckBox Name ="Postav" 
+                                  Content="Поставская ЦРБ"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="LubanskCentrRaionHosp_Checked"
-                                  Unchecked="LubanskCentrRaionHosp_Unchecked"/>
+                                  Checked="Postav_Checked"
+                                  Unchecked="Postav_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="14">
-                        <CheckBox Name="MjadelCentrRaionHosp" 
-                                  Content="УЗ «Мядельская центральная районная больница»"
+                    <Grid Grid.Row="14" Background="LightGray">
+                        <CheckBox Name ="Rossonsk"
+                                  Content="Россонская ЦРБ"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="MjadelCentrRaionHosp_Checked"
-                                  Unchecked="MjadelCentrRaionHosp_Unchecked"/>
+                                  Checked="Rossonsk_Checked"
+                                  Unchecked="Rossonsk_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="15" Background="LightGray">
-                        <CheckBox Name="NesvizkCentrRaionHosp"
-                                  Content="УЗ «Несвижская центральная районная больница»"
+                    <Grid Grid.Row="15">
+                        <CheckBox Name ="Sennen"
+                                  Content="Сенненская ЦРБ"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="NesvizkCentrRaionHosp_Checked"
-                                  Unchecked="NesvizkCentrRaionHosp_Unchecked"/>
+                                  Checked="Sennen_Checked"
+                                  Unchecked="Sennen_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="16">
-                        <CheckBox Name="MarjanaGorkaCentrRaionHosp" 
-                                  Content="УЗ «Марьиногорская центральная районная больница»"
+                    <Grid Grid.Row="16" Background="LightGray">
+                        <CheckBox Name="Tolochin"
+                                  Content="Толочинская ЦРБ"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="MarjanaGorkaCentrRaionHosp_Checked"
-                                  Unchecked="MarjanaGorkaCentrRaionHosp_Unchecked"/>
+                                  Checked="Tolochin_Checked"
+                                  Unchecked="Tolochin_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="17" Background="LightGray">
-                        <CheckBox Name="SluckCentrRaionHosp"
-                                  Content="УЗ «Слуцкая ЦРБ»"
+                    <Grid Grid.Row="17">
+                        <CheckBox Name ="Uschachi"
+                                  Content="Ушачская ЦРБ"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="SluCentrRaionHosp_Checked"
-                                  Unchecked="SluCentrRaionHosp_Unchecked"/>
+                                  Checked="Uschachi_Checked"
+                                  Unchecked="Uschachi_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="18">
-                        <CheckBox Name="SmoleviciCentrRaionHosp" 
-                                  Content="УЗ «Смолевичская центральная районная больница»"
+                    <Grid Grid.Row="18" Background="LightGray">
+                        <CheckBox Name ="Scharkovthinsk" 
+                                  Content="Шарковщинская ЦРБ"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="SmoleviciCentrRaionHosp_Checked"
-                                  Unchecked="SmoleviciCentrRaionHosp_Unchecked"/>
+                                  Checked="Scharkovthinsk_Checked"
+                                  Unchecked="Scharkovthinsk_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="19" Background="LightGray">
-                        <CheckBox Name="StaradorozCentrRaionHosp"
-                                  Content="УЗ «Стародорожская центральная районная больница»"
+                    <Grid Grid.Row="19">
+                        <CheckBox Name="Schumilinsk" 
+                                  Content="Шумилинская ЦРБ"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="StaradorozCentrRaionHosp_Checked"
-                                  Unchecked="StaradorozCentrRaionHosp_Unchecked"/>
+                                  Checked="Schumilinsk_Checked"
+                                  Unchecked="Schumilinsk_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="20">
-                        <CheckBox Name="StolbcCentrRaionHosp" 
-                                  Content="УЗ «Столбцовская центральная районная больница»"
+                    <Grid Grid.Row="20" Background="LightGray">
+                        <CheckBox  Name ="Novopolock"
+                                   Content="Новополоцкая ЦРБ"
+                                   Style="{StaticResource CheckBoxLeft}"
+                                   Checked="Novopolock_Checked"
+                                   Unchecked="Novopolock_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="21" >
+                        <CheckBox Name ="VitebskBSMP" 
+                                  Content="Витебская БСМП"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="StolbcCentrRaionHosp_Checked"
-                                  Unchecked="StolbcCentrRaionHosp_Unchecked"/>
+                                  Checked="VitebskBSMP_Checked"
+                                  Unchecked="VitebskBSMP_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="21" Background="LightGray">
-                        <CheckBox Name="UzdaCentrRaionHosp"
-                                  Content="УЗ «Узденская центральная районная больница»"
+                    <Grid Grid.Row="22" Background="LightGray">
+                        <CheckBox Name ="VOKC" 
+                                  Content="ВОКЦ псих. нарк."
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="UzdaCentrRaionHosp_Checked"
-                                  Unchecked="UzdaCentrRaionHosp_Unchecked"/>
+                                  Checked="VOKC_Checked"
+                                  Unchecked="VOKC_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="22">
-                        <CheckBox Name="CervenCentrRaionHosp" 
-                                  Content="УЗ «Червенская центральная районная больница»"
+                    <Grid Grid.Row="23">
+                        <CheckBox Name ="BraslovOPB" 
+                                  Content="Браславская ОПБ"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="CervenCentrRaionHosp_Checked"
-                                  Unchecked="CervenCentrRaionHosp_Unchecked"/>
+                                  Checked="BraslovOPB_Checked"
+                                  Unchecked="BraslovOPB_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="23" Background="LightGray">
-                        <CheckBox Name="ZodinoCentrRaionHosp"
-                                  Content="УЗ «Жодинская ЦГБ»"
+                    <Grid Grid.Row="24" Background="LightGray">
+                        <CheckBox Name ="VitebskOCK" 
+                                  Content="Витебский ОКЦ"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="ZodinoCentrRaionHosp_Checked"
-                                  Unchecked="ZodinoCentrRaionHosp_Unchecked"/>
+                                  Checked="VitebskOCK_Checked"
+                                  Unchecked="VitebskOCK_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="24">
-                        <CheckBox Name="MinskOblTubHosp" 
-                                  Content="УЗ «Минский областной противотуберкулезный диспансер»"
+                    <Grid Grid.Row="25">
+                        <CheckBox Name ="VitebskToksik" 
+                                  Content="Витебская токсикология"
                                   Style="{StaticResource CheckBoxLeft}"
-                                  Checked="MinskOblTubHosp_Checked"
-                                  Unchecked="MinskOblTubHosp_Unchecked"/>
+                                  Checked="VitebskToksik_Checked"
+                                  Unchecked="VitebskToksik_Unchecked"/>
                     </Grid>
-                    <Grid Grid.Row="26">
+                    <Grid Grid.Row="26" Background="LightGray">
+                        <CheckBox Name="LepelskaOPB" 
+                                  Content="Лепельская ОПБ"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="LepelskaOPB_Checked"
+                                  Unchecked="LepelskaOPB_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="27">
+                        <CheckBox Name="RKPB_PNPC" 
+                                  Content="РКПБ/РНПЦ"
+                                  Style="{StaticResource CheckBoxLeft}"
+                                  Checked="RKPB_PNPC_Checked"
+                                  Unchecked="RKPB_PNPC_Unchecked"/>
+                    </Grid>
+                    <Grid Grid.Row="30">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="50*"/>
                             <ColumnDefinition Width="50*"/>
@@ -1138,105 +1488,125 @@
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
                         <RowDefinition Height="20*"/>
                         <RowDefinition Height="70"/>
                         <RowDefinition Height="10"/>
                     </Grid.RowDefinitions>
-                    <Grid Grid.Row="1" Background="LightGray">
-                        <TextBox Name="MinOblKlinCentrPSI_col"
+                    <Grid Grid.Row="0">
+                        <Label Content="Кол" 
+                               Style="{StaticResource LabelDiag}"/>
+                    </Grid>
+                    <Grid Grid.Row ="1">
+                        <TextBox Name ="PolockOPB_col"
+                              Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="2" Background="LightGray">
+                        <TextBox Name="BeschenkoviciCRB_col"
                                   Style="{StaticResource TextBoxFull}"/>
                     </Grid>
-                    <Grid Grid.Row="2">
-                        <TextBox Name="SoliCentrRainHosp_col"
+                    <Grid Grid.Row="3">
+                        <TextBox Name="BraslowCRB_col"
                                   Style="{StaticResource TextBoxFull}"/>
                     </Grid>
-                    <Grid Grid.Row="3" Background="LightGray">
-                        <TextBox Name="BorisCentrRaionHosp_col"
+                    <Grid Grid.Row="4" Background="LightGray">
+                        <TextBox Name="VerhnedviskCPB_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="5">
+                        <TextBox Name="GorodokskajaCRB_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="6" Background="LightGray">
+                        <TextBox Name="DoksicrajaCRB_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="7">
+                        <TextBox Name="Dubrovenskaja_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="8" Background="LightGray">
+                        <TextBox Name ="Lepelskaja_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="9">
+                        <TextBox Name="Lioznenskaja_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="10" Background="LightGray">
+                        <TextBox Name ="Miorskaja_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="11">
+                        <TextBox Name="Novoluomlsk_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="12" Background="LightGray">
+                        <TextBox Name ="Orscha_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="13">
+                        <TextBox Name ="Postav_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="14" Background="LightGray">
+                        <TextBox Name ="Rossonsk_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="15">
+                        <TextBox Name ="Sennen_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="16" Background="LightGray">
+                        <TextBox Name="Tolochin_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="17">
+                        <TextBox Name ="Uschachi_col"
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="18" Background="LightGray">
+                        <TextBox Name ="Scharkovthinsk_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="19">
+                        <TextBox Name="Schumilinsk_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="20" Background="LightGray">
+                        <TextBox Name ="Novopolock_col"
+                                   Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="21" >
+                        <TextBox Name ="VitebskBSMP_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="22" Background="LightGray">
+                        <TextBox Name ="VOKC_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="23">
+                        <TextBox Name ="BraslovOPB_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="24" Background="LightGray">
+                        <TextBox Name ="VitebskOCK_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="25">
+                        <TextBox Name ="VitebskToksik_col" 
+                                  Style="{StaticResource TextBoxFull}"/>
+                    </Grid>
+                    <Grid Grid.Row="26" Background="LightGray">
+                        <TextBox Name="LepelskaOPB_col"
                                  Style="{StaticResource TextBoxFull}"/>
                     </Grid>
-                    <Grid Grid.Row="4">
-                        <TextBox Name="MolodechCentrRaionHosp_col"
+                    <Grid Grid.Row="27">
+                        <TextBox Name="RKPB_PNPC_col" 
                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="5" Background="LightGray">
-                        <TextBox Name="BerezinoCentrRaionHosp_col"
-                                 Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="6">
-                        <TextBox Name="VileiskaCentrRaionHosp_col"
-                                 Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="7" Background="LightGray">
-                        <TextBox Name="VolozinCentrRaionHosp_col"
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="8" >
-                        <TextBox Name="DerzinskiCentrRaionHosp_col"
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="9" Background="LightGray">
-                        <TextBox Name="KleckCentrRaionHosp_col"
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="10">
-                        <TextBox Name="KopilCentrRaionHosp_col" 
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="11" Background="LightGray">
-                        <TextBox Name="KrupskCentrRaionHosp_col"
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="12">
-                        <TextBox Name="LogoskCentrRaionHosp_col" 
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="13" Background="LightGray">
-                        <TextBox Name="LubanskCentrRaionHosp_col"
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="14">
-                        <TextBox Name="MjadelCentrRaionHosp_col" 
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="15" Background="LightGray">
-                        <TextBox Name="NesvizkCentrRaionHosp_col"
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="16">
-                        <TextBox Name="MarjanaGorkaCentrRaionHosp_col" 
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="17" Background="LightGray">
-                        <TextBox Name="SluckCentrRaionHosp_col"
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="18">
-                        <TextBox Name="SmoleviciCentrRaionHosp_col" 
-                                 Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="19" Background="LightGray">
-                        <TextBox Name="StaradorozCentrRaionHosp_col"
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="20">
-                        <TextBox Name="StolbcCentrRaionHosp_col" 
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="21" Background="LightGray">
-                        <TextBox Name="UzdaCentrRaionHosp_col"
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="22">
-                        <TextBox Name="CervenCentrRaionHosp_col" 
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="23" Background="LightGray">
-                        <TextBox Name="ZodinoCentrRaionHosp_col"
-                                  Style="{StaticResource TextBoxFull}"/>
-                    </Grid>
-                    <Grid Grid.Row="24">
-                        <TextBox Name="MinskOblTubHosp_col" 
-                                  Style="{StaticResource TextBoxFull}"/>
                     </Grid>
                 </Grid>
             </Grid>
